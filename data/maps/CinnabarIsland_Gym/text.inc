@@ -160,31 +160,80 @@ CinnabarIsland_Gym_Text_PokemonQuizRules:: @ 8199C9F
     .string "Here we go!$"
 
 CinnabarIsland_Gym_Text_QuizQuestion1:: @ 8199D5A
-    .string "CATERPIE evolves into METAPOD?$"
+    .string "Does SKITTY need a MOON STONE\n"
+	.string "to evolve?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion2:: @ 8199D79
-    .string "There are nine certified POKéMON\n"
-    .string "LEAGUE BADGES?$"
+    .string "Does POLIWAG evolve into POLIWHIRL?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion3:: @ 8199DA9
-    .string "POLIWAG evolves three times?$"
+    .string "Can you get TM36 SLUDGE BOMB\n"
+    .string "before beating the ELITE 4?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion4:: @ 8199DC6
-    .string "Are electric moves effective\n"
-    .string "against GROUND-type POKéMON?$"
+    .string "Is SURF a good MOVE?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion5:: @ 8199E00
-    .string "POKéMON of the same kind and level\n"
-    .string "are not identical?$"
+    .string "Have you figured out how to\n"
+    .string "sweep LANCE with BEAUTIFLY yet?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion6:: @ 8199E36
-    .string "TM28 contains TOMBSTONY?$"
+    .string "Where did you come from?$"
 
 CinnabarIsland_Gym_Text_CorrectGoOnThrough:: @ 8199E4F
     .string "You're absolutely correct!\p"
     .string "Go on through!$"
 
+CinnabarIsland_Gym_Text_Quiz1BattleText:
+	.string "Usually yes, but not in\n"
+	.string "this game!\p"
+	.string "Prepare to battle!$"
+
+CinnabarIsland_Gym_Text_Quiz2BattleText:
+	.string "The Council of Kanto disabled\n"
+	.string "the evolution because POLIWHIRL\l"
+	.string "was too powerful.\p"
+	.string "So yes, but actually no.\p"
+	.string "Battle time!$"
+
+CinnabarIsland_Gym_Text_Quiz3BattleText:
+	.string "The best answer for everything\n"
+	.string "in life is, “it depends”, but\l"
+	.string "it wasn't even an option to\l"
+	.string "get out of battling me!$"
+
+CinnabarIsland_Gym_Text_Quiz4BattleText:
+	.string "HAHAHAHAHAHAHAHAHAHAHAH!$"
+
+CinnabarIsland_Gym_Text_Quiz4BattleTextNo:
+	.string "\p"
+	.string "HA!$"
+
+CinnabarIsland_Gym_Text_Quiz5BattleText:
+	.string "You should definitely look\n"
+	.string "harder at your strategies then.$"
+
+CinnabarIsland_Gym_Text_Quiz6BattleText:
+	.string "That doesn't make any sense.\p"
+	.string "You have to come from somewhere\p"
+	.string "Battle me, anyway.$"
+
 CinnabarIsland_Gym_Text_SorryBadCall:: @ 8199E79
     .string "Sorry!\n"
     .string "Bad call!$"
+
+CinnabarIsland_Gym_Text_HaveToCheckParty:
+	.string "Checking Party Size!$"
+
+CinnabarIsland_Gym_Text_GoAhead:
+	.string "You may now enter the GYM.$"
+
+CinnabarIsland_Gym_Text_CantLetYouIn:
+	.string "ERROR: More than three POKéMON\n"
+	.string "in party.\p"
+	.string "Come back with fewer POKéMON.$"
+
+CinnabarIsland_Gym_Text_CannotLeave:
+	.string "You may not leave until you have\n"
+	.string "defeated BLAINE.$"
 
