@@ -744,7 +744,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SURF] =
     {
         .effect = EFFECT_HIT,
-        .power = 60,
+        .power = 35,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 15,
@@ -913,7 +913,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_STRENGTH] =
     {
         .effect = EFFECT_HIT,
-        .power = 60,
+        .power = 40,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 15,
