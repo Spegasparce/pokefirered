@@ -26,38 +26,22 @@ CeladonCity_DepartmentStore_2F_EventScript_ClerkItems:: @ 816BB10
 
 	.align 2
 CeladonCity_DepartmentStore_2F_Items:: @ 816BB38
+	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_REVIVE
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_NONE
 	release
 	end
 
-CeladonCity_DepartmentStore_2F_EventScript_ClerkTMs:: @ 816BB4E
-	goto_if_questlog EventScript_ReleaseEnd
+Celadon_TM_Vendor::
 	lock
-	faceplayer
-	message Text_MayIHelpYou
-	waitmessage
-	pokemart CeladonCity_DepartmentStore_2F_TMs
-	msgbox Text_PleaseComeAgain
+	msgbox Text_Celadon_TM_Vendor, MSGBOX_DEFAULT
 	release
 	end
 
-	.align 2
-CeladonCity_DepartmentStore_2F_TMs:: @ 816BB74
-	.2byte ITEM_TM05
-	.2byte ITEM_TM15
-	.2byte ITEM_TM28
-	.2byte ITEM_TM31
-	.2byte ITEM_TM43
-	.2byte ITEM_TM45
-	.2byte ITEM_NONE
-	release
-	end
+Text_Celadon_TM_Vendor::
+	.string	"Unfortunately, we're all\n"
+	.string	"out of TMs due to global\l"
+	.string "supply chain issues.$"
+

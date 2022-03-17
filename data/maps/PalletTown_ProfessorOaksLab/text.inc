@@ -16,7 +16,8 @@ PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer:: @ 818DCE2
     .string "Go ahead and choose, {PLAYER}!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen:: @ 818DD34
-    .string "{RIVAL}: I'll take this one, then!$"
+    .string "{RIVAL}: This seems weak, so I'll\n"
+    .string "take a better one of this type!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak:: @ 818DD52
     .string "{RIVAL} received the {STR_VAR_1}\n"

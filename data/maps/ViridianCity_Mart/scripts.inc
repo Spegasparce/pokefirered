@@ -65,9 +65,7 @@ ViridianCity_Mart_EventScript_Clerk:: @ 816A268
 	.align 2
 ViridianCity_Mart_Items:: @ 816A298
 	.2byte ITEM_POKE_BALL
-	.2byte ITEM_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_NONE
 	release
 	end
