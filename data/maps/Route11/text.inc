@@ -109,5 +109,5 @@ Route11_Text_DavePostBattle:: @ 81852E3
     .string "I better go find stronger ones!$"
 
 Route11_Text_DiglettsCave:: @ 8185308
-    .string "DIGLETT'S CAVE$"
+    .string "DUNSPARCE'S CAVE$"
 

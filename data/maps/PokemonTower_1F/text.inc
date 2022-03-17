@@ -23,7 +23,8 @@ PokemonTower_1F_Text_GrowlitheWhyDidYouDie:: @ 8179C8C
     .string "Why did you die?$"
 
 PokemonTower_1F_Text_SenseSpiritsUpToMischief:: @ 8179CAB
-    .string "I am a CHANNELER.\p"
+    .string "I cannot let you pass without a\n"
+    .string "SILPH SCOPE.\p"
     .string "There are spirits up to mischief.\n"
     .string "I sense them high in the TOWER.$"
 
