@@ -827,7 +827,7 @@ gMoveDescription_Superpower:: @ 84871E9
 	.string "A powerful attack,\nbut it also lowers\nthe user's ATTACK\nand DEFENSE stats.$"
 
 gMoveDescription_MagicCoat:: @ 8487234
-	.string "Reflects back the\nfoe's LEECH SEED\nand any status-\ndamaging move.$"
+	.string "The user prepares its\nheavenly body to anticipate\nand reflect status moves.$"
 
 gMoveDescription_Recycle:: @ 8487276
 	.string "A move that\nrecycles a used\nitem for use once\nmore.$"

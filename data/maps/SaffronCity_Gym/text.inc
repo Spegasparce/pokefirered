@@ -35,9 +35,9 @@ SaffronCity_Gym_Text_ReceivedTM04FromSabrina:: @ 819B7D3
     .string "SABRINA.$"
 
 SaffronCity_Gym_Text_ExplainTM04:: @ 819B7F2
-    .string "TM04 is CALM MIND.\p"
-    .string "It makes the POKéMON concentrate\n"
-    .string "to raise both SP. ATK and SP. DEF.$"
+    .string "TM04 is MAGIC COAT.\p"
+    .string "It makes the POKéMON reflect most\n"
+    .string "opponents' status moves.$"
 
 SaffronCity_Gym_Text_BagFullOfOtherItems:: @ 819B849
     .string "Your BAG is full of other items.$"
