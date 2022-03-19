@@ -1,12 +1,16 @@
 CinnabarIsland_Gym_Text_BlaineIntro:: @ 8199543
-    .string "Hah!\p"
+    .string "Like my Gym Restrictions, do ya?\p"
     .string "I am BLAINE, the red-hot LEADER\n"
     .string "of CINNABAR GYM!\p"
-    .string "My fiery POKéMON are all rough\n"
-    .string "and ready with intense heat!\p"
-    .string "They incinerate all challengers!\p"
+    .string "My fiery POKéMON are all ready\n"
+    .string "with intense heat!\p"
+    .string "But I've been getting destroyed by\n"
+    .string "almost every WATER type that comes\n"
+    .string "in here, so I had to do something\n"
+    .string "to make it fair!\p"
     .string "Hah!\n"
-    .string "You better have BURN HEAL!{PLAY_BGM}{MUS_EXEYE}$"
+    .string "Good luck having your weakened\n"
+    .string "team survive my incinerating power!{PLAY_BGM}{MUS_EXEYE}$"
 
 CinnabarIsland_Gym_Text_BlaineDefeat:: @ 81995FA
     .string "I have burned down to nothing!\n"
