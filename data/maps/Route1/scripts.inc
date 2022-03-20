@@ -7,15 +7,15 @@ Route1_EventScript_MartClerk:: @ 8167EFE
 	goto_if_set FLAG_GOT_POTION_ON_ROUTE_1, Route1_EventScript_AlreadyGotPotion
 	msgbox Route1_Text_WorkAtPokeMartTakeSample
 	textcolor 3
-	checkitemspace ITEM_POTION, 1
+	checkitemspace ITEM_POKE_BALL, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_BagIsFull
-	getitemname 1, ITEM_POTION
+	getitemname 1, ITEM_POKE_BALL
 	playfanfare MUS_FANFA1
 	message Text_ObtainedTheX
 	waitmessage
 	waitfanfare
-	additem ITEM_POTION
+	additem ITEM_POKE_BALL
 	msgbox Route1_Text_PutPotionAway
 	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_POTION_ON_ROUTE_1

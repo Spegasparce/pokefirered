@@ -12,8 +12,8 @@ Route1_Text_ComeSeeUsIfYouNeedPokeBalls:: @ 8183347
     .string "POKé BALLS for catching POKéMON.$"
 
 Route1_Text_PutPotionAway:: @ 8183387
-    .string "{PLAYER} put the POTION away in\n"
-    .string "the BAG's ITEMS POCKET.$"
+    .string "{PLAYER} put the POKé BALL away\n"
+    .string "in the BAG's ITEMS POCKET.$"
 
 Route1_Text_CanJumpFromLedges:: @ 81833B9
     .string "See those ledges along the road?\p"

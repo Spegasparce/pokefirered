@@ -15,11 +15,11 @@ ViridianForest_EventScript_ItemAntidote:: @ 81BE5B5
 	end
 
 ViridianForest_EventScript_ItemPotion:: @ 81BE5C2
-	finditem ITEM_POTION
+	finditem ITEM_ORAN_BERRY
 	end
 
 MtMoon_1F_EventScript_ItemParalyzeHeal:: @ 81BE5CF
-	finditem ITEM_PARALYZE_HEAL
+	finditem ITEM_ORAN_BERRY
 	end
 
 MtMoon_1F_EventScript_ItemTM09:: @ 81BE5DC
@@ -27,7 +27,7 @@ MtMoon_1F_EventScript_ItemTM09:: @ 81BE5DC
 	end
 
 MtMoon_1F_EventScript_ItemPotion:: @ 81BE5E9
-	finditem ITEM_POTION
+	finditem ITEM_POKE_BALL
 	end
 
 MtMoon_1F_EventScript_ItemNugget:: @ 81BE5F6
@@ -71,7 +71,7 @@ SSAnne_2F_Room2_EventScript_ItemStardust:: @ 81BE66B
 	end
 
 SSAnne_2F_Room4_EventScript_ItemXAttack:: @ 81BE678
-	finditem ITEM_X_ATTACK
+	finditem ITEM_PECHA_BERRY
 	end
 
 SSAnne_B1F_Room2_EventScript_ItemTM44:: @ 81BE685
@@ -91,7 +91,7 @@ SSAnne_Kitchen_EventScript_ItemGreatBall:: @ 81BE6AC
 	end
 
 Route9_EventScript_ItemTM40:: @ 81BE6B9
-	finditem ITEM_TM40
+	finditem ITEM_TM28
 	end
 
 RocketHideout_B1F_EventScript_ItemEscapeRope:: @ 81BE6C6
@@ -99,7 +99,7 @@ RocketHideout_B1F_EventScript_ItemEscapeRope:: @ 81BE6C6
 	end
 
 RocketHideout_B1F_EventScript_ItemHyperPotion:: @ 81BE6D3
-	finditem ITEM_HYPER_POTION
+	finditem ITEM_PEARL
 	end
 
 RocketHideout_B2F_EventScript_ItemXSpeed:: @ 81BE6E0
@@ -207,7 +207,7 @@ SafariZone_North_EventScript_ItemTM47:: @ 81BE825
 	end
 
 SafariZone_West_EventScript_ItemTM32:: @ 81BE832
-	finditem ITEM_TM32
+	finditem ITEM_TM40
 	end
 
 SafariZone_West_EventScript_ItemGoldTeeth:: @ 81BE83F
@@ -535,7 +535,7 @@ OneIsland_KindleRoad_EventScript_ItemMaxRepel:: @ 81BEC4F
 	end
 
 OneIsland_KindleRoad_EventScript_ItemCarbos:: @ 81BEC5C
-	finditem ITEM_CARBOS
+	finditem ITEM_NET_BaLL
 	end
 
 FiveIsland_Meadow_EventScript_ItemMaxPotion:: @ 81BEC69

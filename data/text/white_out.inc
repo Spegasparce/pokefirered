@@ -7,10 +7,9 @@ Text_MonsHealedShouldBuyPotions:: @ 81A5EC0
 	.string "to perfect health.\p"
 	.string "If your POKéMON's energy, HP,\n"
 	.string "is down, please come see us.\p"
-	.string "If you're planning to go far in the\n"
-	.string "field, you should buy some POTIONS\l"
-	.string "at the POKéMON MART.\p"
-	.string "We hope you excel!$"
+	.string "I wish you could still buy some\n"
+	.string "POTIONS at the POKéMON MART...\p"
+	.string "Well, good luck anyway!$"
 
 Text_MonsHealed:: @ 81A5F9B
 	.string "Your POKéMON have been healed\n"
@@ -34,9 +33,6 @@ Text_MomExplainHPGetPotions:: @ 81A6046
 	.string "If your POKéMON lose their HP,\n"
 	.string "you can restore them at any\l"
 	.string "POKéMON CENTER.\p"
-	.string "If you're going to travel far away,\n"
-	.string "the smart TRAINER stocks up on\l"
-	.string "POTIONS at the POKéMON MART.\p"
 	.string "Make me proud, honey!\p"
 	.string "Take care!$"
 
