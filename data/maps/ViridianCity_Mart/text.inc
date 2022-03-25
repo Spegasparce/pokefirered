@@ -19,13 +19,13 @@ ViridianCity_Mart_Text_ShopDoesGoodBusinessInAntidotes:: @ 81902F5
     .string "The shops in Kanto recently\n"
     .string "fell under new management.\p"
     .string "The new owners must be pretty\n"
-    .string "sadistic to stop selling\n"
+    .string "sadistic to stop selling\l"
     .string "ANTIDOTES.$"
 
 
 ViridianCity_Mart_Text_GotToBuySomePotions:: @ 819032C
     .string "You can't buy any POTIONS here.\p"
     .string "You'll never be able to help\n"
-    .string "when your POKéMON need quick\n"
+    .string "when your POKéMON need quick\l"
     .string "healing.$"
 

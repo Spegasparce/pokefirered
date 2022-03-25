@@ -535,7 +535,7 @@ OneIsland_KindleRoad_EventScript_ItemMaxRepel:: @ 81BEC4F
 	end
 
 OneIsland_KindleRoad_EventScript_ItemCarbos:: @ 81BEC5C
-	finditem ITEM_NET_BaLL
+	finditem ITEM_NET_BALL
 	end
 
 FiveIsland_Meadow_EventScript_ItemMaxPotion:: @ 81BEC69
