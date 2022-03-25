@@ -135,7 +135,6 @@ enum
 
 enum
 {
-    OPTIONS_BATTLE_STYLE_SHIFT,
     OPTIONS_BATTLE_STYLE_SET
 };
 
