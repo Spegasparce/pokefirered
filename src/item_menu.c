@@ -2101,7 +2101,6 @@ static void RestorePlayerBag(void)
 void InitOldManBag(void)
 {
     BackUpPlayerBag();
-    AddBagItem(ITEM_POTION, 1);
     AddBagItem(ITEM_POKE_BALL, 1);
     GoToBagMenu(ITEMMENULOCATION_OLD_MAN, OPEN_BAG_ITEMS, SetCB2ToReshowScreenAfterMenu2);
 }
@@ -2167,8 +2166,6 @@ void InitPokedudeBag(u8 a0)
     MainCallback cb2;
     u8 location;
     BackUpPlayerBag();
-    AddBagItem(ITEM_POTION, 1);
-    AddBagItem(ITEM_ANTIDOTE, 1);
     AddBagItem(ITEM_TEACHY_TV, 1);
     AddBagItem(ITEM_TM_CASE, 1);
     AddBagItem(ITEM_POKE_BALL, 5);
