@@ -357,7 +357,7 @@ Help_Text_AnswerRanOutOfPotions:: @ 81B457C
 	.string "MARTS, that sell items.\l"
 	.string "You will not find POKéMON MARTS on\l"
 	.string "roads, in forests, or in caves.\l"
-	.string "Stock up on needed non-healing items.\1"
+	.string "Stock up on needed non-healing items.\l"
 	.string "while you are visiting a town with\l"
 	.string "a POKéMON MART.$"
 
