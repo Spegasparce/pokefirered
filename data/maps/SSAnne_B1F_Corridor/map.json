@@ -69,8 +69,8 @@
       "type": "hidden_item",
       "x": 21,
       "y": 5,
+      "item": "ITEM_NEST_BALL",
       "elevation": 3,
-      "item": "ITEM_HYPER_POTION",
       "flag": "HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_HYPER_POTION",
       "quantity": 1,
       "underfoot": false

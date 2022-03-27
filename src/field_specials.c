@@ -1310,15 +1310,6 @@ static const u8 *const sListMenuLabels[][12] = {
     {
         gText_Energypowder_50,
         gText_EnergyRoot_80,
-        gText_HealPowder_50,
-        gText_RevivalHerb_300,
-        gText_Protein_1000,
-        gText_Iron_1000,
-        gText_Carbos_1000,
-        gText_Calcium_1000,
-        gText_Zinc_1000,
-        gText_HpUp_1000,
-        gText_PpUp_3000,
         gOtherText_Exit,
     }, 
     [LISTMENU_TRAINER_TOWER_FLOORS] = // Unnecessary, MULTICHOICE_ROOFTOP_B1F is used instead

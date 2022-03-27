@@ -62,32 +62,28 @@ ViridianCity_House2_Text_ExplainSleep:: @ 818FFA9
     .string "asleep.\p"
     .string "POKéMON will stay asleep even\n"
     .string "after battles.\p"
-    .string "Use AWAKENING to awaken one\n"
-    .string "from sleep.$"
+    .string "Use a CHESTO BERRY to awaken\n"
+    .string "one from sleep.$"
 
 ViridianCity_House2_Text_ExplainBurn:: @ 8190025
     .string "A burn reduces ATTACK power.\n"
     .string "It also causes ongoing HP loss.\p"
     .string "A burn remains after a battle.\n"
-    .string "Use BURN HEAL to cure a burn.$"
 
 ViridianCity_House2_Text_ExplainPoison:: @ 819009F
     .string "When poisoned, a POKéMON's health\n"
     .string "steadily drops.\p"
-    .string "Poison lingers after battles.\n"
-    .string "Use an ANTIDOTE to cure poison!$"
+    .string "But it seems like it stopped\n"
+    .string "doing it out of battle recently!$"
 
 ViridianCity_House2_Text_ExplainFreeze:: @ 819010F
     .string "A frozen POKéMON becomes\n"
     .string "helplessly immobile.\p"
     .string "It stays frozen even after the\n"
     .string "battle ends.\p"
-    .string "Use ICE HEAL to thaw out the\n"
-    .string "suffering POKéMON.$"
 
 ViridianCity_House2_Text_ExplainParalysis:: @ 8190199
     .string "Paralysis reduces SPEED and may\n"
     .string "prevent the POKéMON from moving.\p"
     .string "Paralysis remains after battles.\n"
-    .string "Use PARLYZ HEAL for treatment.$"
 

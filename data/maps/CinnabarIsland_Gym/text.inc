@@ -134,7 +134,7 @@ CinnabarIsland_Gym_Text_GymGuyAdvice:: @ 8199B81
     .string "The hotheaded BLAINE is a FIRE\n"
     .string "POKéMON pro.\p"
     .string "Douse his spirits with water!\p"
-    .string "You'd better take some\n"
+    .string "You'd wish you had some\n"
     .string "BURN HEALS, too.$"
 
 CinnabarIsland_Gym_Text_GymGuyPostVictory:: @ 8199C0C
