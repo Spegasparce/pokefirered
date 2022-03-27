@@ -76,11 +76,10 @@ SaffronCity_Text_GymSign:: @ 8181362
 
 SaffronCity_Text_FullHealCuresStatus:: @ 81813AA
     .string "TRAINER TIPS\p"
-    .string "FULL HEAL cures all ailments like\n"
+    .string "LUM BERRY cures all ailments like\n"
     .string "burns, paralysis, poisoning,\l"
     .string "freezing, and sleep.\p"
-    .string "It costs a bit more, but it's more\n"
-    .string "convenient than buying other items.$"
+    .string "Good luck finding it!$"
 
 SaffronCity_Text_GreatBallImprovedCatchRate:: @ 8181452
     .string "TRAINER TIPS\p"

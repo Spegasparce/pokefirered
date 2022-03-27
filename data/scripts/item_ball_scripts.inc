@@ -83,7 +83,7 @@ SSAnne_B1F_Room3_EventScript_ItemEther:: @ 81BE692
 	end
 
 SSAnne_B1F_Room5_EventScript_ItemSuperPotion:: @ 81BE69F
-	finditem ITEM_SUPER_POTION
+	finditem ITEM_ORAN_BERRY
 	end
 
 SSAnne_Kitchen_EventScript_ItemGreatBall:: @ 81BE6AC
