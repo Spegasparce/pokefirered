@@ -7744,6 +7744,7 @@ static void atkA8_copymovepermanently(void) // sketch
     gChosenMove = 0xFFFF;
     if (!(gBattleMons[gBattlerAttacker].status2 & STATUS2_TRANSFORMED)
      && gLastPrintedMoves[gBattlerTarget] != MOVE_STRUGGLE
+     && gLastPrintedMoves[gBattlerTarget] != MOVE_BATON_PASS
      && gLastPrintedMoves[gBattlerTarget] != 0
      && gLastPrintedMoves[gBattlerTarget] != 0xFFFF
      && gLastPrintedMoves[gBattlerTarget] != MOVE_SKETCH)
