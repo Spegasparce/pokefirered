@@ -1,7 +1,3 @@
-SilphCo_5F_MapScripts:: @ 81617BE
-	map_script MAP_SCRIPT_ON_LOAD, SilphCo_5F_OnLoad
-	.byte 0
-
 SilphCo_5F_EventScript_WorkerM:: @ 81617E0
 	lock
 	faceplayer
