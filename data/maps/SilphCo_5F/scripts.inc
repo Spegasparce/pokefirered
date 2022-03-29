@@ -2,12 +2,6 @@ SilphCo_5F_MapScripts:: @ 81617BE
 	map_script MAP_SCRIPT_ON_LOAD, SilphCo_5F_OnLoad
 	.byte 0
 
-SilphCo_5F_OnLoad:: @ 81617C4
-	call_if_unset FLAG_SILPH_5F_DOOR_1, EventScript_Close5FDoor1
-	call_if_unset FLAG_SILPH_5F_DOOR_2, EventScript_Close5FDoor2
-	call_if_unset FLAG_SILPH_5F_DOOR_3, EventScript_Close5FDoor3
-	end
-
 SilphCo_5F_EventScript_WorkerM:: @ 81617E0
 	lock
 	faceplayer
