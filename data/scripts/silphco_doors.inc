@@ -306,30 +306,6 @@ SilphCo_4F_EventScript_Door2:: @ 81A899D
     goto EventScript_TryUnlockDoor
     end
 
-SilphCo_5F_EventScript_Door1:: @ 81A89B7
-    lockall
-    setvar VAR_TEMP_1, 7
-    setvar VAR_0x8004, FLAG_SILPH_5F_DOOR_1
-    goto_if_set FLAG_SILPH_5F_DOOR_1, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
-
-SilphCo_5F_EventScript_Door2:: @ 81A89D1
-    lockall
-    setvar VAR_TEMP_1, 8
-    setvar VAR_0x8004, FLAG_SILPH_5F_DOOR_2
-    goto_if_set FLAG_SILPH_5F_DOOR_2, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
-
-SilphCo_5F_EventScript_Door3:: @ 81A89EB
-    lockall
-    setvar VAR_TEMP_1, 9
-    setvar VAR_0x8004, FLAG_SILPH_5F_DOOR_3
-    goto_if_set FLAG_SILPH_5F_DOOR_3, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
-
 SilphCo_6F_EventScript_Door:: @ 81A8A05
     lockall
     setvar VAR_TEMP_1, 10
@@ -338,27 +314,12 @@ SilphCo_6F_EventScript_Door:: @ 81A8A05
     goto EventScript_TryUnlockDoor
     end
 
-SilphCo_7F_EventScript_Door1:: @ 81A8A1F
-    lockall
-    setvar VAR_TEMP_1, 11
-    setvar VAR_0x8004, FLAG_SILPH_7F_DOOR_1
-    goto_if_set FLAG_SILPH_7F_DOOR_1, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
 
 SilphCo_7F_EventScript_Door2:: @ 81A8A39
     lockall
     setvar VAR_TEMP_1, 12
     setvar VAR_0x8004, FLAG_SILPH_7F_DOOR_2
     goto_if_set FLAG_SILPH_7F_DOOR_2, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
-
-SilphCo_7F_EventScript_Door3:: @ 81A8A53
-    lockall
-    setvar VAR_TEMP_1, 13
-    setvar VAR_0x8004, FLAG_SILPH_7F_DOOR_3
-    goto_if_set FLAG_SILPH_7F_DOOR_3, EventScript_DoorUnlocked
     goto EventScript_TryUnlockDoor
     end
 
@@ -439,21 +400,11 @@ EventScript_OpenDoor:: @ 81A8B32
     call_if_eq EventScript_Open4FDoor1
     compare VAR_TEMP_1, 6
     call_if_eq EventScript_Open4FDoor2
-    compare VAR_TEMP_1, 7
-    call_if_eq EventScript_Open5FDoor1
-    compare VAR_TEMP_1, 8
-    call_if_eq EventScript_Open5FDoor2
-    compare VAR_TEMP_1, 9
-    call_if_eq EventScript_Open5FDoor3
     compare VAR_TEMP_1, 10
     call_if_eq EventScript_Open6FDoor
-    compare VAR_TEMP_1, 11
-    call_if_eq EventScript_Open7FDoor1
     compare VAR_TEMP_1, 12
     call_if_eq EventScript_Open7FDoor2
     compare VAR_TEMP_1, 13
-    call_if_eq EventScript_Open7FDoor3
-    compare VAR_TEMP_1, 14
     call_if_eq EventScript_Open8FDoor
     compare VAR_TEMP_1, 15
     call_if_eq EventScript_Open9FDoor1
