@@ -35,12 +35,12 @@
       "x": 34,
       "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
+      "script": "SilphCo_1F_EventScript_Scientist",
       "flag": "0"
     }
   ],
@@ -87,18 +87,18 @@
       "x": 34,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_0x3F20",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
-      "script": "NULL"
+      "script": "SilphCo_1F_EventScript_LockYouInTriggerTop"
     },
     {
       "type": "trigger",
       "x": 34,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_0x3F20",
+      "var": "VAR_TEMP_1",
       "var_value": "0",
-      "script": "NULL"
+      "script": "SilphCo_1F_EventScript_LockYouInTriggerBottom"
     }
   ],
   "bg_events": [
