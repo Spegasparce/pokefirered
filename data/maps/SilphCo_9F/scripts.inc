@@ -48,7 +48,7 @@ SilphCo_9F_EventScript_Grunt2:: @ 8161D6F
 	
 SilphCo_9F_EventScript_UseTheHeal::
 	call EventScript_OutOfCenterPartyHeal
-	setflag FLAG_SilphCo_9F_UsedHeal
+	setflag FLAG_SILPH_CO_9F_USED_HEAL
 	msgbox SilphCo_9F_Text_DontGiveUp
 	release
 	end
@@ -64,4 +64,3 @@ SilphCo_9F_EventScript_IWillBeReady::
 	release
     end
 
-	
