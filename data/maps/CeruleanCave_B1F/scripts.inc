@@ -28,14 +28,14 @@ CeruleanCave_B1F_EventScript_Mewtwo:: @ 81624F5
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MEWTWO, 2
+	playmoncry SPECIES_Ditto, 2
 	message CeruleanCave_B1F_Text_Mew
 	waitmessage
 	waitmoncry
 	delay 20
 	playbgm MUS_EXEYE, 0
 	waitbuttonpress
-	setwildbattle SPECIES_MEWTWO, 70, ITEM_NONE
+	setwildbattle SPECIES_DITTO, 70, ITEM_NONE
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
 	special StartLegendaryBattle
 	waitstate
@@ -57,6 +57,6 @@ CeruleanCave_B1F_EventScript_DefeatedMewtwo:: @ 8162558
 	end
 
 CeruleanCave_B1F_EventScript_RanFromMewtwo:: @ 8162561
-	setvar VAR_0x8004, SPECIES_MEWTWO
+	setvar VAR_0x8004, SPECIES_DITTO
 	goto EventScript_MonFlewAway
 	end
