@@ -55,7 +55,7 @@ SilphCo_9F_Text_FloorSign:: @ 8176CD4
     .string "SILPH CO. HEAD OFFICE\n"
     .string "9F$"
 
-SilphCo_9F_Text_IWillBeReady
+SilphCo_9F_Text_IWillBeReady::
     .string "I will be ready should you\n"
     .string "wish to use the one-time\l"
     .string "heal for your POKéMON.$"
