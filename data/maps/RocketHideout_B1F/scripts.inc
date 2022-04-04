@@ -16,13 +16,13 @@ RocketHideout_B1F_OnTransition:: @ 81611AA
 RocketHideout_B1F_EventScript_Grunt1:: @ 81611AE
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_8, RocketHideout_B1F_Text_Grunt1Intro, RocketHideout_B1F_Text_Grunt1Defeat
 	msgbox RocketHideout_B1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
-	applymovement LOCALID_ROCKET_GRUNT, RocketHideout_B1F_Movement_PushDown
 	end
 
 RocketHideout_B1F_EventScript_Grunt2:: @ 81611C5
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_9, RocketHideout_B1F_Text_Grunt2Intro, RocketHideout_B1F_Text_Grunt2Defeat
 	msgbox RocketHideout_B1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	applymovement LOCALID_ROCKET_GRUNT, RocketHideout_B1F_Movement_PushDown
+	waitmovement 0
 	end
 
 RocketHideout_B1F_EventScript_Grunt3:: @ 81611DC
@@ -65,3 +65,7 @@ RocketHideout_B1F_EventScript_RemoveBarrier:: @ 816126A
 	setmetatile 20, 21, METATILE_SilphCo_HideoutFloor_ShadeFull, 0
 	setmetatile 21, 21, METATILE_SilphCo_HideoutFloor, 0
 	return
+
+RocketHideout_B1F_Movement_PushDown::
+    walk_right
+	step_end

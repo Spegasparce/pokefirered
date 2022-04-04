@@ -20,13 +20,11 @@ SilphCo_1F_EventScript_DisableLockYouInTrigger::
 	return
 
 SilphCo_1F_EventScript_LockYouInTriggerTop::
-	lockall
 	setvar VAR_0x8008, 0
 	goto SilphCo_1F_EventScript_LockYouInTrigger
 	end
 
 SilphCo_1F_EventScript_LockYouInTriggerBottom::
-	lockall
 	setvar VAR_0x8008, 1
 	goto SilphCo_1F_EventScript_LockYouInTrigger
 	end
@@ -55,11 +53,11 @@ SilphCo_1F_Movement_WalkUp::
 
 SilphCo_1F_EventScript_Scientist::
 	call_if_set FLAG_HIDE_SILPH_ROCKETS, SilphCo_1F_EventScript_PostRocketScientist
-	msgbox SilphCo_1F_Text_LockYouInText
+	msgbox SilphCo_1F_Text_LockYouInText, MSGBOX_NPC
 	end
 
 SilphCo_1F_EventScript_PostRocketScientist::
-	msgbox SilphCo_1F_Text_PostRocketScientist
+	msgbox SilphCo_1F_Text_PostRocketScientist, MSGBOX_NPC
 	end
 
 

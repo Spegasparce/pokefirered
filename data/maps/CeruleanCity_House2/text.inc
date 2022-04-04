@@ -5,7 +5,7 @@ CeruleanCity_House2_Text_RocketsStoleTMForDig:: @ 8191E13
     .string "They stole a TM for teaching\n"
     .string "POKéMON how to spit seeds!\p"
     .string "I was going to use it on a\n"
-    .string "LOTAD or a SHROOMISH\p"
+    .string "LOTAD or a SHROOMISH...\p"
     .string "That cost me a bundle, it did!$"
 
 CeruleanCity_House2_Text_TeachDiglettDigWithoutTM:: @ 8191ED8

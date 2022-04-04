@@ -87,22 +87,48 @@ PokemonTower_2F_EventScript_RivalExitDown:: @ 8163389
 
 PokemonTower_2F_Movement_RivalExitRight:: @ 8163394
 	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
 	walk_right
 	walk_right
-	walk_down
-	walk_down
-	walk_down
-	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
 	walk_in_place_fastest_right
 	step_end
 
 PokemonTower_2F_Movement_RivalExitDown:: @ 816339D
 	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
 	walk_right
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
 	walk_in_place_fastest_right
 	step_end
