@@ -15,11 +15,15 @@ RocketHideout_B1F_Text_Grunt2Intro:: @ 8174F2C
     .string "operation? What nerve!$"
 
 RocketHideout_B1F_Text_Grunt2Defeat:: @ 8174F60
-    .string "Boom!$"
+    .string "That's it!\p"
+    .string "I'm not letting you out until\n"
+    .string "you talk to my manager!$"
 
 RocketHideout_B1F_Text_Grunt2PostBattle:: @ 8174F66
-    .string "You're not going to get away with\n"
-    .string "this, brat!$"
+    .string "Didn't you hear me?\p"
+    .string "Go talk to my boss.\p"
+    .string "At least one of you abusive goons\n"
+    .string "will lose in that matchup!$"
 
 RocketHideout_B1F_Text_Grunt3Intro:: @ 8174F94
     .string "Intruder alert!$"

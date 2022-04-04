@@ -21,9 +21,9 @@ Route14_Text_MitchPostBattle:: @ 8185F1A
     .string "better moves.$"
 
 Route14_Text_BeckIntro:: @ 8185F46
-    .string "They have TMs on sale at the\n"
+    .string "They no longer have TMs at the\n"
     .string "CELADON DEPT. STORE.\p"
-    .string "TMs aren't really rare, but not\n"
+    .string "TMs are now rare, and not\n"
     .string "many people have HMs.$"
 
 Route14_Text_BeckDefeat:: @ 8185FAE
