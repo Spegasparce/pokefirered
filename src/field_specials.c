@@ -940,45 +940,9 @@ u16 InitElevatorFloorSelectMenuPos(void)
             sElevatorScroll = 0;
             sElevatorCursorPos = 0;
             break;
-        case MAP_NUM(SILPH_CO_10F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 1;
-            break;
-        case MAP_NUM(SILPH_CO_9F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 2;
-            break;
-        case MAP_NUM(SILPH_CO_8F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 3;
-            break;
-        case MAP_NUM(SILPH_CO_7F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(SILPH_CO_6F):
-            sElevatorScroll = 1;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(SILPH_CO_5F):
-            sElevatorScroll = 2;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(SILPH_CO_4F):
-            sElevatorScroll = 3;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(SILPH_CO_3F):
-            sElevatorScroll = 4;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(SILPH_CO_2F):
-            sElevatorScroll = 5;
-            sElevatorCursorPos = 4;
-            break;
         case MAP_NUM(SILPH_CO_1F):
-            sElevatorScroll = 5;
-            sElevatorCursorPos = 5;
+            sElevatorScroll = 0;
+            sElevatorCursorPos = 0;
             break;
         case MAP_NUM(ROCKET_HIDEOUT_B1F):
             sElevatorScroll = 0;
@@ -1184,12 +1148,12 @@ void ListMenu(void)
             task->data[15] = taskId;
             break;
         case LISTMENU_SILPHCO_FLOORS:
-            task->data[0] = 7;
-            task->data[1] = 12;
+            task->data[0] = 2;
+            task->data[1] = 2;
             task->data[2] = 1;
             task->data[3] = 1;
             task->data[4] = 8;
-            task->data[5] = 12;
+            task->data[5] = 4;
             task->data[6] = 0;
             task->data[15] = taskId;
             task->data[7] = sElevatorScroll;
@@ -1271,7 +1235,7 @@ static const u8 *const sListMenuLabels[][12] = {
     [LISTMENU_SILPHCO_FLOORS] = 
     {
         gText_1F,
-        gOtherText_Exit,
+        gOtherText_Exit,   
     }, 
     [LISTMENU_ROCKET_HIDEOUT_FLOORS] = // Unncessary, MULTICHOICE_ROCKET_HIDEOUT_ELEVATOR is used instead
     {
