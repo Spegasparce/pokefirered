@@ -23,7 +23,7 @@ SaffronCity_Dojo_EventScript_HitmonleeBall:: @ 816EC00
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_AlreadyGotHitmon
-	drawmonpic SPECIES_UNOWN, 10, 3
+	drawmonpic SPECIES_MEDITITE, 10, 3
 	setvar VAR_TEMP_1, SPECIES_MEDITITE
 	applymovement LOCALID_KARATE_MASTER, Movement_WalkInPlaceFastestUp
 	waitmovement 0
@@ -45,7 +45,7 @@ SaffronCity_Dojo_EventScript_HitmonchanBall:: @ 816EC46
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_AlreadyGotHitmon
-	drawmonpic SPECIES_UNOWN, 10, 3
+	drawmonpic SPECIES_MANKEY, 10, 3
 	setvar VAR_TEMP_1, SPECIES_MANKEY
 	applymovement LOCALID_KARATE_MASTER, Movement_WalkInPlaceFastestUp
 	waitmovement 0

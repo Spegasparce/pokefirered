@@ -11,13 +11,13 @@ SilphCo_7F_Text_ObtainedLaprasFromEmployee:: @ 81762D7
 
 SilphCo_7F_Text_ExplainLapras:: @ 8176305
     .string "There you go!\n"
-    .string "It's a very intelligent POKéMON.\p"
+    .string "It's a very interesting POKéMON.\p"
     .string "We kept it in our lab, but it will\n"
     .string "be much better off with you.\p"
     .string "I think you will be a good TRAINER\n"
     .string "for this Pokémon!\p"
-    .string "It's a good swimmer.\n"
-    .string "It'll give you a lift across water!$"
+    .string "It's almost useless, but it'll be\n"
+    .string "based if it wins a battle though!$"
 
 SilphCo_7F_Text_RocketBossWentToBoardroom:: @ 81763DD
     .string "TEAM ROCKET's BOSS went to the\n"
