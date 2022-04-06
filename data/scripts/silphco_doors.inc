@@ -160,8 +160,8 @@ EventScript_Open3FDoor1:: @ 81A858E
 
 EventScript_Open3FDoor2:: @ 81A85C5
     setmetatile 22, 16, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 22, 17, METATILE_SilphCo_Floor, 0
-    setmetatile 23, 16, METATILE_SilphCo_Floor_ShadeFull, 0
+    setmetatile 22, 17, METATILE_SilphCo_Floor_ShadeFull, 0
+    setmetatile 23, 16, METATILE_SilphCo_Floor, 0
     setmetatile 23, 17, METATILE_SilphCo_Floor, 0
     setmetatile 23, 18, METATILE_SilphCo_Floor, 0
     return
@@ -404,7 +404,7 @@ EventScript_OpenDoor:: @ 81A8B32
     call_if_eq EventScript_Open6FDoor
     compare VAR_TEMP_1, 12
     call_if_eq EventScript_Open7FDoor2
-    compare VAR_TEMP_1, 13
+    compare VAR_TEMP_1, 14
     call_if_eq EventScript_Open8FDoor
     compare VAR_TEMP_1, 15
     call_if_eq EventScript_Open9FDoor1
