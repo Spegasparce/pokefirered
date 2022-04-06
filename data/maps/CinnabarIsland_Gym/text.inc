@@ -5,10 +5,11 @@ CinnabarIsland_Gym_Text_BlaineIntro:: @ 8199543
     .string "My fiery POKéMON are all ready\n"
     .string "with intense heat!\p"
     .string "But I've been getting destroyed by\n"
-    .string "almost every WATER type that comes\n"
-    .string "in here, so I had to do something\n"
+    .string "almost every WATER type that comes\l"
+    .string "in here.\p"
+    .string "So I had to do something\n"
     .string "to make it fair!\p"
-    .string "Hah!\n"
+    .string "Hah!\p"
     .string "Good luck having your weakened\n"
     .string "team survive my incinerating power!{PLAY_BGM}{MUS_EXEYE}$"
 
@@ -219,7 +220,7 @@ CinnabarIsland_Gym_Text_Quiz5BattleText:
 
 CinnabarIsland_Gym_Text_Quiz6BattleText:
 	.string "That doesn't make any sense.\p"
-	.string "You have to come from somewhere\p"
+	.string "You have to come from somewhere.\p"
 	.string "Battle me, anyway.$"
 
 CinnabarIsland_Gym_Text_SorryBadCall:: @ 8199E79
