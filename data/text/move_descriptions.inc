@@ -827,7 +827,7 @@ gMoveDescription_Superpower:: @ 84871E9
 	.string "A powerful attack,\nbut it also lowers\nthe user's ATTACK\nand DEFENSE stats.$"
 
 gMoveDescription_MagicCoat:: @ 8487234
-	.string "The user prepares its\nheavenly body to anticipate\nand reflect status moves.$"
+	.string "The user prepares\nits body to\nreflect status\nmoves.$"
 
 gMoveDescription_Recycle:: @ 8487276
 	.string "A move that\nrecycles a used\nitem for use once\nmore.$"

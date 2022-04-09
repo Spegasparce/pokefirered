@@ -32,6 +32,7 @@ RocketHideout_B4F_EventScript_Giovanni:: @ 8161317
 	msgbox RocketHideout_B4F_Text_GiovanniPostBattle
 	fadescreen FADE_TO_BLACK
 	closemessage
+	call RocketHideout_B1F_EventScript_RemoveBarrier
 	removeobject LOCALID_GIOVANNI
 	addobject LOCALID_SILPH_SCOPE
 	clearflag FLAG_HIDE_SILPH_SCOPE

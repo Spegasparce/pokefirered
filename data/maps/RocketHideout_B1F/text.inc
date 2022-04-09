@@ -12,10 +12,11 @@ RocketHideout_B1F_Text_Grunt1PostBattle:: @ 8174EFA
 
 RocketHideout_B1F_Text_Grunt2Intro:: @ 8174F2C
     .string "You broke into TEAM ROCKET's\n"
-    .string "operation? What nerve!$"
+    .string "operation?  I, the mighty\l"
+    .string "entrance guard will stop you!$"
 
 RocketHideout_B1F_Text_Grunt2Defeat:: @ 8174F60
-    .string "That's it!\p"
+    .string "Never mind!\p"
     .string "I'm not letting you out until\n"
     .string "you talk to my manager!$"
 

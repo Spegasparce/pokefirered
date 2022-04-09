@@ -19,8 +19,8 @@
 #define TITLE_TEXT gString_PokemonFireRed_Staff
 asm(".set TITLE_TEXT, gString_PokemonFireRed_Staff");
 #elif defined(LEAFGREEN)
-#define TITLE_TEXT gString_PokemonLeafGreen_Staff
-asm(".set TITLE_TEXT, gString_PokemonLeafGreen_Staff");
+#define TITLE_TEXT gString_PokemonGarbageGreen_Staff
+asm(".set TITLE_TEXT, gString_PokemonGarbageGreen_Staff");
 #endif
 
 enum CreditsSceneIdx
@@ -72,6 +72,13 @@ enum CreditsClosingText
 
 enum CreditsString
 {
+    CREDITS_STRING_HACKPRODUCER,
+    CREDITS_STRING_JAN_POKEMON_CHALLENGES,
+    CREDITS_STRING_LEADDESIGNER,
+    CREDITS_STRING_SPEGASPARCE,
+    CREDITS_STRING_CODEMASTERS,
+    CREDITS_STRING_TOXIC_NOT_SUICUU,
+    CREDITS_STRING_POKEMONLEAFGREEN_STAFF,
     CREDITS_STRING_DIRECTOR = 0,
     CREDITS_STRING_ART_DIRECTOR_BATTLE_DIRECTOR,
     CREDITS_STRING_PROGRAM_LEADER_PLANNING_LEADER_GRAPHIC_DESIGN_LEADER,
@@ -374,9 +381,16 @@ static const struct CompressedGraphicsHeader sCopyrightOrTheEndGfxHeaders[] = {
 
 static const struct CreditsScrcmd sCreditsScript[] = {
     CREDITS_MAPNEXT(ROUTE23, 16),
-    CREDITS_PRINT(DIRECTOR, 300),
-    CREDITS_PRINT(ART_DIRECTOR_BATTLE_DIRECTOR, 300),
-    CREDITS_PRINT(PROGRAM_LEADER_PLANNING_LEADER_GRAPHIC_DESIGN_LEADER, 300),
+    CREDITS_PRINT(HACKPRODUCER, 300),
+    CREDITS_PRINT(JAN_POKEMON_CHALLENGES, 300),
+    CREDITS_PRINT(LEADDESIGNER, 300),
+    CREDITS_PRINT(SPEGASPARCE, 300),
+    CREDITS_PRINT(CODEMASTERS, 300),
+    CREDITS_PRINT(TOXIC_NOT_SUICUU, 300),
+    CREDITS_PRINT(POKEMONLEAFGREEN_STAFF, 300),
+    CREDITS_PRINT(DIRECTOR, 211),
+    CREDITS_PRINT(ART_DIRECTOR_BATTLE_DIRECTOR, 211),
+    CREDITS_PRINT(PROGRAM_LEADER_PLANNING_LEADER_GRAPHIC_DESIGN_LEADER, 211),
     CREDITS_PRINT(DUMMY, 60),
     CREDITS_MAPNEXT(VIRIDIAN_CITY, 0),
     CREDITS_PRINT(PROGRAMMERS, 211),
@@ -655,6 +669,10 @@ static const struct CreditsOverworldCmd *const sOverworldMapScenes[] = {
 };
 
 static const struct CreditsTextHeader sCreditsTexts[] = {
+    { gCreditsString_HackProducer, gCreditsString_Jan_Pokemon_Challenges, FALSE },
+    { gCreditsString_LeadDesigner, gCreditsString_Spegasparce, FALSE },
+    { gCreditsString_CodeMasters, gCreditsString_Toxic_Not_Suicuu, FALSE },
+    { gCreditsString_PokemonLeafGreen_Staff, FALSE },
     { gCreditsString_Director, gCreditsString_Junichi_Masuda, FALSE },
     { gCreditsString_Art_Director_Battle_Director, gCreditsString_Ken_Sugimori_Shigeki_Morimoto, FALSE },
     { gCreditsString_Program_Leader_Planning_Leader_Graphic_Design_Leader, gCreditsString_Tetsuya_Watanabe_Koji_Nishino_Takao_Unno, FALSE },
