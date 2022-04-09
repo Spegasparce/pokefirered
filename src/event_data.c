@@ -148,7 +148,6 @@ void ResetMysteryEventVars(void)
     VarSet(VAR_0x40BA, 0);
     VarSet(VAR_0x40BB, 0);
     VarSet(VAR_0x40BC, 0);
-    VarSet(VAR_ALTERING_CAVE_WILD_SET, 0);
 }
 
 void DisableResetRTC(void)

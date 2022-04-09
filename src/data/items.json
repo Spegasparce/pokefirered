@@ -4681,7 +4681,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user prepares its\\nheavenly body to anticipate\\nand reflect status moves.",
+      "description_english": "The user prepares\\nits heavenly body to\\nanticipate and reflect\\nstatus moves.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
