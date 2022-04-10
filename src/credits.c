@@ -78,7 +78,6 @@ enum CreditsString
     CREDITS_STRING_SPEGASPARCE,
     CREDITS_STRING_CODEMASTERS,
     CREDITS_STRING_TOXIC_NOT_SUICUU,
-    CREDITS_STRING_POKEMONLEAFGREEN_STAFF,
     CREDITS_STRING_DIRECTOR = 0,
     CREDITS_STRING_ART_DIRECTOR_BATTLE_DIRECTOR,
     CREDITS_STRING_PROGRAM_LEADER_PLANNING_LEADER_GRAPHIC_DESIGN_LEADER,
@@ -381,16 +380,9 @@ static const struct CompressedGraphicsHeader sCopyrightOrTheEndGfxHeaders[] = {
 
 static const struct CreditsScrcmd sCreditsScript[] = {
     CREDITS_MAPNEXT(ROUTE23, 16),
-    CREDITS_PRINT(HACKPRODUCER, 300),
-    CREDITS_PRINT(JAN_POKEMON_CHALLENGES, 300),
-    CREDITS_PRINT(LEADDESIGNER, 300),
-    CREDITS_PRINT(SPEGASPARCE, 300),
-    CREDITS_PRINT(CODEMASTERS, 300),
-    CREDITS_PRINT(TOXIC_NOT_SUICUU, 300),
-    CREDITS_PRINT(POKEMONLEAFGREEN_STAFF, 300),
-    CREDITS_PRINT(DIRECTOR, 211),
-    CREDITS_PRINT(ART_DIRECTOR_BATTLE_DIRECTOR, 211),
-    CREDITS_PRINT(PROGRAM_LEADER_PLANNING_LEADER_GRAPHIC_DESIGN_LEADER, 211),
+    CREDITS_PRINT(DIRECTOR, 300),
+    CREDITS_PRINT(ART_DIRECTOR_BATTLE_DIRECTOR, 300),
+    CREDITS_PRINT(PROGRAM_LEADER_PLANNING_LEADER_GRAPHIC_DESIGN_LEADER, 300),
     CREDITS_PRINT(DUMMY, 60),
     CREDITS_MAPNEXT(VIRIDIAN_CITY, 0),
     CREDITS_PRINT(PROGRAMMERS, 211),
@@ -672,7 +664,6 @@ static const struct CreditsTextHeader sCreditsTexts[] = {
     { gCreditsString_HackProducer, gCreditsString_Jan_Pokemon_Challenges, FALSE },
     { gCreditsString_LeadDesigner, gCreditsString_Spegasparce, FALSE },
     { gCreditsString_CodeMasters, gCreditsString_Toxic_Not_Suicuu, FALSE },
-    { gCreditsString_PokemonLeafGreen_Staff, FALSE },
     { gCreditsString_Director, gCreditsString_Junichi_Masuda, FALSE },
     { gCreditsString_Art_Director_Battle_Director, gCreditsString_Ken_Sugimori_Shigeki_Morimoto, FALSE },
     { gCreditsString_Program_Leader_Planning_Leader_Graphic_Design_Leader, gCreditsString_Tetsuya_Watanabe_Koji_Nishino_Takao_Unno, FALSE },
@@ -712,10 +703,10 @@ static const struct CreditsTextHeader sCreditsTexts[] = {
     { gCreditsString_Braille_Code_Check_2, gCreditsString_National_Federation_of_the_Blind_Patricia_A_Maurer_Japan_Braille_Library_European_Blind_Union, TRUE  },
     { gCreditsString_Braille_Code_Check_3, gCreditsString_National_Information_Library_Service_Margaret_Campion, TRUE  },
     { gCreditsString_Special_Thanks_4, gCreditsString_Takehiro_Izushi_Motoyasu_Tojima_Hitoshi_Yamagami_Hiroyuki_Uesugi, FALSE },
+    { gString_Dummy, gString_Dummy, FALSE },
     { gCreditsString_Special_Thanks_5, gCreditsString_Nicola_Pratt_Barlow_Shellie_Dow_Anthony_Howitt_Naoko_Saeki_Kyoko_Onishi, FALSE },
     { gCreditsString_Braille_Code_Check_4, gCreditsString_The_Royal_New_Zealand_Foundation_of_the_Blind_Greg_Moran, FALSE },
-    { gCreditsString_Graphic_Designer, gCreditsString_Akira_Kinashi, FALSE },
-    { gString_Dummy, gString_Dummy, FALSE }
+    { gCreditsString_Graphic_Designer, gCreditsString_Akira_Kinashi, FALSE }
 };
 
 void DoCredits(void)

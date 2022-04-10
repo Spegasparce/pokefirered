@@ -403,7 +403,6 @@ extern const u8 gCreditsString_LeadDesigner[];
 extern const u8 gCreditsString_Spegasparce[];
 extern const u8 gCreditsString_CodeMasters[];
 extern const u8 gCreditsString_Toxic_Not_Suicuu[];
-extern const u8 gCreditsString_PokemonLeafGreen_Staff[]; // LG
 extern const u8 gCreditsString_Director[];
 extern const u8 gCreditsString_Junichi_Masuda[];
 extern const u8 gCreditsString_Art_Director_Battle_Director[];
