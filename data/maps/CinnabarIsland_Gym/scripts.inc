@@ -771,8 +771,6 @@ CinnabarIsland_Gym_EventScript_GoAhead::
 	call_if_eq CinnabarIsland_EventScript_CannotLeave
 	compare VAR_TEMP_A, 0
 	call_if_eq CinnabarIsland_EventScript_GoAhead
-	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Gym_Movement_EnterGym
-	waitmovement 0
 	releaseall
 	end
 
@@ -789,12 +787,26 @@ CinnabarIsland_Gym_EventScript_CheckMessage::
 
 CinnabarIsland_EventScript_CannotLeave::
 	msgbox CinnabarIsland_Gym_Text_CannotLeave
+	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Gym_Movement_EnterGym
+	waitmovement 0
 	return
 
 CinnabarIsland_EventScript_GoAhead::
-	msgbox CinnabarIsland_Gym_Text_GoAhead
-	setvar VAR_TEMP_A, 1
+	msgbox CinnabarIsland_Gym_Text_DoYouWantToEnter, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq CinnabarIsland_Gym_EventScript_EnterGym
+	compare VAR_RESULT, NO
+	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Gym_Movement_BackUp
+    waitmovement 0
 	return
+
+CinnabarIsland_Gym_EventScript_EnterGym::
+  	msgbox CinnabarIsland_Gym_Text_GoAhead
+	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Gym_Movement_EnterGym
+    waitmovement 0
+	setvar VAR_TEMP_A, 1
+	releaseall
+	end
 
 CinnabarIsland_Gym_Movement_BackUp:
 	walk_down

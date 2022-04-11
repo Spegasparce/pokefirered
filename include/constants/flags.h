@@ -385,7 +385,7 @@
 #define FLAG_HIDE_ROCKET_HIDEOUT_B4F_MAX_ETHER                  0x175
 #define FLAG_HIDE_ROCKET_HIDEOUT_B4F_CALCIUM                    0x176
 #define FLAG_HIDE_POKEMON_TOWER_3F_ESCAPE_ROPE                  0x177
-#define FLAG_HIDE_POKEMON_TOWER_4F_ELIXIR                       0x178
+#define FLAG_LOCKED_POKEMON_TOWER                               0x178
 #define FLAG_HIDE_POKEMON_TOWER_4F_AWAKENING                    0x179
 #define FLAG_HIDE_POKEMON_TOWER_4F_GREAT_BALL                   0x17A
 #define FLAG_HIDE_POKEMON_TOWER_5F_NUGGET                       0x17B

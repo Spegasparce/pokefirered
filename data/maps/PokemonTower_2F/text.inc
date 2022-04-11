@@ -21,8 +21,8 @@ PokemonTower_2F_Text_RivalVictory:: @ 8179DA2
 
 PokemonTower_2F_Text_RivalPostBattle:: @ 8179DD4
     .string "How's your POKéDEX coming?\n"
-    .string "I just caught a CUBONE!\p"
-    .string "I can't find the bigger MAROWAK.\n"
+    .string "I just caught a LILEEP!\p"
+    .string "I can't find the bigger CRADILY.\n"
     .string "Where could they be?\p"
     .string "I bet there aren't any left!\p"
     .string "Well, I better get going.\n"
@@ -35,4 +35,31 @@ PokemonTower_2F_Text_SilphScopeCouldUnmaskGhosts:: @ 8179EAE
     .string "wayward ghosts.\p"
     .string "A SILPH SCOPE might be able to\n"
     .string "unmask them.$"
+
+PokemonTower_2F_Text_Gatekeeper_LockIn::
+    .string "I cannot allow you to abandon\n"
+    .string "us until you have quelled the\l"
+    .string "restless spirits.$"
+
+PokemonTower_2F_Text_Gatekeeper_NeedHelp::
+    .string "Oh!\p"
+    .string "I see you have a SILPH SCOPE.\p"
+    .string "We need your help to purge our\n"
+    .string "tower of rampaging spirits.\p"
+    .string "However, I cannot let you leave\n"
+    .string "after you enter.\p"
+    .string "Will you help us?$"
+
+PokemonTower_2F_Text_Gatekeeper_GoodLuck::
+    .string "Thank you and good luck.$"
+
+PokemonTower_2F_Text_Gatekeeper_Prepare::
+    .string "Prepare yourself.\p"
+    .string "Then come back.  You do not\n"
+    .string "want me to hunt you down if\l"
+    .string "you do not return.$"
+
+    
+
+
 

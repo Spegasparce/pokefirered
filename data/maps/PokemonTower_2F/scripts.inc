@@ -1,3 +1,5 @@
+.equ LOCALID_GATEKEEPER, 3
+
 PokemonTower_2F_MapScripts:: @ 8163285
 	.byte 0
 
@@ -131,4 +133,60 @@ PokemonTower_2F_Movement_RivalExitDown:: @ 816339D
 	walk_up
 	walk_up
 	walk_in_place_fastest_right
+	step_end
+
+PokemonTower_2F_EventScript_GatekeeperTrigger::
+	lockall
+	goto PokemonTower_2F_EventScript_Gatekeeper
+	end
+
+PokemonTower_2F_EventScript_Gatekeeper::
+	lockall
+	goto_if_set FLAG_HIDE_TOWER_FUJI, PokemonTower_2F_EventScript_RemoveBlock
+	goto_if_set FLAG_LOCKED_POKEMON_TOWER, PokemonTower_2F_EventScript_Gatekeeper_PushIn
+	msgbox PokemonTower_2F_Text_Gatekeeper_NeedHelp, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq PokemonTower_2F_EventScript_Gatekeeper_Enter
+	compare VAR_RESULT, NO
+	goto_if_eq PokemonTower_2F_EventScript_Gatekeeper_Prepare
+	end
+
+PokemonTower_2F_EventScript_RemoveBlock::
+	releaseall
+	end
+
+PokemonTower_2F_EventScript_Gatekeeper_Enter::
+	msgbox PokemonTower_2F_Text_Gatekeeper_GoodLuck
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonTower_2F_Movement_WalkLeft
+	waitmovement 0
+	setflag FLAG_LOCKED_POKEMON_TOWER
+	releaseall
+	end
+
+PokemonTower_2F_EventScript_Gatekeeper_Prepare::
+	msgbox PokemonTower_2F_Text_Gatekeeper_Prepare
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonTower_2F_Movement_WalkRight
+	waitmovement 0
+	releaseall
+	end
+
+PokemonTower_2F_EventScript_Gatekeeper_PushIn::
+    msgbox PokemonTower_2F_Text_Gatekeeper_LockIn
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonTower_2F_Movement_WalkLeft
+	waitmovement 0
+	releaseall
+	end
+
+PokemonTower_2F_Movement_Gatekeeper_PushLeft::
+    walk_down
+	walk_up
+	walk_in_place_fastest_down
+	step_end
+
+PokemonTower_2F_Movement_WalkLeft::
+	walk_left
+	step_end
+
+PokemonTower_2F_Movement_WalkRight::
+	walk_right
 	step_end

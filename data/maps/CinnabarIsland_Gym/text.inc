@@ -242,3 +242,7 @@ CinnabarIsland_Gym_Text_CannotLeave:
 	.string "You may not leave until you have\n"
 	.string "defeated BLAINE.$"
 
+CinnabarIsland_Gym_Text_DoYouWantToEnter:
+    .string "You may not leave until you have\n"
+    .string "defeated BLAINE.\p"
+    .string "Do you want to enter?$"

@@ -38,11 +38,27 @@ RocketHideout_B1F_EventScript_Grunt1:: @ 81611AE
 RocketHideout_B1F_EventScript_Grunt2:: @ 81611C5
 	goto_if_set FLAG_HIDE_CELADON_ROCKETS, RocketHideout_B1F_EventScript_RemoveBlock
 	goto_if_defeated TRAINER_TEAM_ROCKET_GRUNT_9, RocketHideout_B1F_EventScript_Grunt2Locking
-	msgbox RocketHideout_B1F_Text_Grunt2Intro, MSGBOX_NPC
-    trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_9, RocketHideout_B1F_Text_Grunt2Defeat
+	msgbox RocketHideout_B1F_Text_Grunt2Intro, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+    goto_if_eq RocketHideout_B1F_EventScript_Grunt2PushOut
+	compare VAR_RESULT, YES
+    goto_if_eq RocketHideout_B1F_EventScript_Grunt2_Battle
+	end
+
+RocketHideout_B1F_EventScript_Grunt2_Battle::
+	msgbox RocketHideout_B1F_Text_Grunt2Battle
+	trainerbattle_no_intro  TRAINER_TEAM_ROCKET_GRUNT_9, RocketHideout_B1F_Text_Grunt2Defeat
 	applymovement LOCALID_ROCKET_GRUNT, RocketHideout_B1F_Movement_Grunt2_PushDown
 	applymovement OBJ_EVENT_ID_PLAYER, RocketHideout_B1F_Movement_WalkDown
 	waitmovement 0
+	end
+
+
+RocketHideout_B1F_EventScript_Grunt2PushOut::
+	msgbox RocketHideout_B1F_Text_Grunt2ComeBack
+	applymovement OBJ_EVENT_ID_PLAYER, RocketHideout_B1F_Movement_WalkUp
+	waitmovement 0
+	releaseall
 	end
 
 RocketHideout_B1F_EventScript_Grunt2Locking::
@@ -103,7 +119,10 @@ RocketHideout_B1F_Movement_WalkDown::
 	walk_down
 	step_end
 
-
 RocketHideout_B1F_EventScript_RemoveBlock::
 	releaseall
 	end
+
+RocketHideout_B1F_Movement_WalkUp::
+	walk_up
+	step_end

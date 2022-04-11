@@ -12,11 +12,14 @@ RocketHideout_B1F_Text_Grunt1PostBattle:: @ 8174EFA
 
 RocketHideout_B1F_Text_Grunt2Intro:: @ 8174F2C
     .string "You broke into TEAM ROCKET's\n"
-    .string "operation?  I, the mighty\l"
-    .string "entrance guard will stop you!$"
+    .string "operation?  Are you ready to\l"
+    .string "take on all of us?$"
+
+RocketHideout_B1F_Text_Grunt2Battle::
+    .string "I, the mighty entrance guard,\n"
+    .string "will stop you!$"
 
 RocketHideout_B1F_Text_Grunt2Defeat:: @ 8174F60
-    .string "Never mind!\p"
     .string "I'm not letting you out until\n"
     .string "you talk to my manager!$"
 
@@ -55,4 +58,8 @@ RocketHideout_B1F_Text_Grunt5Defeat:: @ 817505A
 RocketHideout_B1F_Text_Grunt5PostBattle:: @ 8175060
     .string "Uh-oh, that ruckus somehow opened\n"
     .string "the door!$"
+
+RocketHideout_B1F_Text_Grunt2ComeBack::
+    .string "Ok, come back when you're ready\n"
+    .string "to give me a real fight.$"
 
