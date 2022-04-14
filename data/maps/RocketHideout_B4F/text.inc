@@ -51,6 +51,7 @@ RocketHideout_B4F_Text_Grunt1Defeat:: @ 81754B9
     .string "No!$"
 
 RocketHideout_B4F_Text_Grunt1PostBattle:: @ 81754BD
-    .string "Oh, no!\n"
-    .string "I dropped the LIFT KEY!$"
+    .string "Whoops!\p" 
+    .string "I dropped my massive LIFT KEY\n"
+    .string "for our magnum elevator!$"
 

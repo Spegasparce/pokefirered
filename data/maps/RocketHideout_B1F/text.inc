@@ -56,8 +56,8 @@ RocketHideout_B1F_Text_Grunt5Defeat:: @ 817505A
     .string "Why…?$"
 
 RocketHideout_B1F_Text_Grunt5PostBattle:: @ 8175060
-    .string "Uh-oh, that ruckus somehow opened\n"
-    .string "the door!$"
+    .string "Please don't take any part of\n"
+    .string "my lunch while you're in here!$"
 
 RocketHideout_B1F_Text_Grunt2ComeBack::
     .string "Ok, come back when you're ready\n"

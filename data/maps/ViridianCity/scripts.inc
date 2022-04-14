@@ -1,4 +1,6 @@
-.equ LOCALID_TUTORIAL_MAN, 4
+.set LOCALID_OLD_MAN,      2
+.set LOCALID_TUTORIAL_MAN, 3
+.set LOCALID_WOMAN,        4
 
 ViridianCity_MapScripts:: @ 81658D3
 	map_script MAP_SCRIPT_ON_TRANSITION, ViridianCity_OnTransition

@@ -3,13 +3,13 @@ Route12_Text_MonSprawledOutInSlumber:: @ 8185317
     .string "a deep and comfortable slumber.$"
 
 Text_SnorlaxWokeUp:: @ 8185354
-    .string "SNORLAX woke up!\p"
+    .string "The POKéMON woke up!\p"
     .string "It attacked in a grumpy rage!$"
 
 Text_SnorlaxReturnedToMountains:: @ 8185383
-    .string "SNORLAX calmed down.\n"
-    .string "It gave a huge yawn…\l"
-    .string "And returned to the mountains.$"
+    .string "The DITTO calmed down.\n"
+    .string "It gave a huge wiggle…\l"
+    .string "And oozed off menacingly.$"
 
 Text_WantToUsePokeFlute:: @ 81853CC
     .string "Want to use the POKé FLUTE?$"
