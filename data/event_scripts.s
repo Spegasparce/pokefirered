@@ -1090,6 +1090,14 @@ EventScript_OutOfCenterPartyHeal:: @ 81A6C26
 	fadescreen FADE_FROM_BLACK
 	return
 
+EventScript_SilphPartyHeal::
+	fadescreen FADE_TO_BLACK
+	playfanfare MUS_ME_ASA
+	waitfanfare
+	special HealPlayerPartySilph
+	fadescreen FADE_FROM_BLACK
+	return
+
 EventScript_WallTownMap:: @ 81A6C32
 	lockall
 	msgbox Text_ATownMap

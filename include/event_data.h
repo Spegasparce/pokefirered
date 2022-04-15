@@ -1,6 +1,7 @@
 #ifndef GUARD_EVENT_DATA_H
 #define GUARD_EVENT_DATA_H
 #define NUM_SOFT_CAPS 10
+#define NUM_HARD_CAPS 10
 
 #include "global.h"
 
@@ -62,4 +63,6 @@ void sub_806E190(void);
 void ClearTempFieldEventData(void);
 extern const u16 sLevelCapFlags[NUM_SOFT_CAPS];
 extern const u16 sLevelCaps[NUM_SOFT_CAPS];
+extern const u16 sCandyCapFlags[NUM_HARD_CAPS];
+extern const u16 sCandyCaps[NUM_HARD_CAPS];
 #endif // GUARD_EVENT_DATA_H
