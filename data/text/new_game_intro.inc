@@ -2,127 +2,127 @@ gOtherText_NewName:: @ 81C574F
     .string "NEW NAME$"
 
 gNameChoice_Green:: @ 81C5758
-    .string "GREEN$"
+    .string "KHAIRAT$"
 
 gNameChoice_Red:: @ 81C575E
-    .string "RED$"
+    .string "UROOJ$"
 
 gNameChoice_Leaf:: @ 81C5762
-    .string "LEAF$"
+    .string "ZUHA$"
 
 gNameChoice_Fire:: @ 81C5767
-    .string "FIRE$"
+    .string "SAYDA$"
 
 gNameChoice_Gary:: @ 81C576C
-    .string "GARY$"
+    .string "ZARQAWI$"
 
 gNameChoice_Kaz:: @ 81C5771
-    .string "KAZ$"
+    .string "YAQOOB$"
 
 gNameChoice_Toru:: @ 81C5775
-    .string "TORU$"
+    .string "SIRAJ$"
 
 gNameChoice_Ash:: @ 81C577A
-    .string "ASH$"
+    .string "JUNAID$"
 
 gNameChoice_Kene:: @ 81C577E
-    .string "KENE$"
+    .string "ZALMAIY$"
 
 gNameChoice_Geki:: @ 81C5783
-    .string "GEKI$"
+    .string "QAMAR$"
 
 gNameChoice_Jak:: @ 81C5788
-    .string "JAK$"
+    .string "ISRAR$"
 
 gNameChoice_Janne:: @ 81C578C
-    .string "JANNE$"
+    .string "JALEEL$"
 
 gNameChoice_Jonn:: @ 81C5792
-    .string "JONN$"
+    .string "HURR$"
 
 gNameChoice_Kamon:: @ 81C5797
-    .string "KAMON$"
+    .string "UZAIR$"
 
 gNameChoice_Karl:: @ 81C579D
-    .string "KARL$"
+    .string "LUGHAAT$"
 
 gNameChoice_Taylor:: @ 81C57A2
-    .string "TAYLOR$"
+    .string "QULDAIR$"
 
 gNameChoice_Oscar:: @ 81C57A9
-    .string "OSCAR$"
+    .string "ZABEEH$"
 
 gNameChoice_Hiro:: @ 81C57AF
-    .string "HIRO$"
+    .string "MAHMUD$"
 
 gNameChoice_Max:: @ 81C57B4
-    .string "MAX$"
+    .string "GHALIB$"
 
 gNameChoice_Jon:: @ 81C57B8
-    .string "JON$"
+    .string "MIR$"
 
 gNameChoice_Ralph:: @ 81C57BC
-    .string "RALPH$"
+    .string "IQBAL$"
 
 gNameChoice_Kay:: @ 81C57C2
-    .string "KAY$"
+    .string "MUSTAFA$"
 
 gNameChoice_Tosh:: @ 81C57C6
-    .string "TOSH$"
+    .string "ISRAT$"
 
 gNameChoice_Roak:: @ 81C57CB
-    .string "ROAK$"
+    .string "HUMAYUN$"
 
 gNameChoice_Omi:: @ 81C57D0
-    .string "OMI$"
+    .string "BUS$"
 
 gNameChoice_Jodi:: @ 81C57D4
-    .string "JODI$"
+    .string "ARZOO$"
 
 gNameChoice_Amanda:: @ 81C57D9
-    .string "AMANDA$"
+    .string "ZULEKHA$"
 
 gNameChoice_Hillary:: @ 81C57E0
-    .string "HILLARY$"
+    .string "ZHAALA$"
 
 gNameChoice_Makey:: @ 81C57E8
-    .string "MAKEY$"
+    .string "MAHBUBA$"
 
 gNameChoice_Michi:: @ 81C57EE
-    .string "MICHI$"
+    .string "SHUKRIA$"
 
 gNameChoice_Paula:: @ 81C57F4
-    .string "PAULA$"
+    .string "QADIRA$"
 
 gNameChoice_June:: @ 81C57FA
-    .string "JUNE$"
+    .string "TALEEHA$"
 
 gNameChoice_Cassie:: @ 81C57FF
-    .string "CASSIE$"
+    .string "BENAZIR$"
 
 gNameChoice_Rey:: @ 81C5806
-    .string "REY$"
+    .string "ZUBI$"
 
 gNameChoice_Seda:: @ 81C580A
-    .string "SEDA$"
+    .string "RAHEELA$"
 
 gNameChoice_Kiko:: @ 81C580F
-    .string "KIKO$"
+    .string "RASHIDA$"
 
 gNameChoice_Mina:: @ 81C5814
-    .string "MINA$"
+    .string "SAMIA$"
 
 gNameChoice_Norie:: @ 81C5819
-    .string "NORIE$"
+    .string "SHAGHF$"
 
 gNameChoice_Sai:: @ 81C581F
-    .string "SAI$"
+    .string "NAJHA$"
 
 gNameChoice_Momo:: @ 81C5823
-    .string "MOMO$"
+    .string "FAEEZAH$"
 
 gNameChoice_Suzi:: @ 81C5828
-    .string "SUZI$"
+    .string "SHAZFA$"
 
 gNewGame_HelpDocs1:: @ 81C582D
     .string "The various buttons will be explained in\n"
