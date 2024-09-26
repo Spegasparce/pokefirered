@@ -43,29 +43,20 @@ CeruleanCity_House5_EventScript_ChooseExchangeItem:: @ 816AEC8
 	switch VAR_RESULT
 	case 0, CeruleanCity_House5_EventScript_EnergyPowder
 	case 1, CeruleanCity_House5_EventScript_EnergyRoot
-	case 2, CeruleanCity_House5_EventScript_HealPowder
-	case 3, CeruleanCity_House5_EventScript_RevivalHerb
-	case 4, CeruleanCity_House5_EventScript_Protein
-	case 5, CeruleanCity_House5_EventScript_Iron
-	case 6, CeruleanCity_House5_EventScript_Carbos
-	case 7, CeruleanCity_House5_EventScript_Calcium
-	case 8, CeruleanCity_House5_EventScript_Zinc
-	case 9, CeruleanCity_House5_EventScript_HPUp
-	case 10, CeruleanCity_House5_EventScript_PPUp
-	case 11, CeruleanCity_House5_EventScript_ExitMenu
+	case 3, CeruleanCity_House5_EventScript_ExitMenu
 	case 127, CeruleanCity_House5_EventScript_ExitMenu
 	end
 
 CeruleanCity_House5_EventScript_EnergyPowder:: @ 816AF6C
-	getitemname 0, ITEM_ENERGY_POWDER
-	setvar VAR_0x8008, ITEM_ENERGY_POWDER
+	getitemname 0, ITEM_NET_BALL
+	setvar VAR_0x8008, ITEM_NET_BALL
 	setvar VAR_0x8009, 50
 	goto CeruleanCity_House5_EventScript_ExchangePowderForItem
 	end
 
 CeruleanCity_House5_EventScript_EnergyRoot:: @ 816AF80
-	getitemname 0, ITEM_ENERGY_ROOT
-	setvar VAR_0x8008, ITEM_ENERGY_ROOT
+	getitemname 0, ITEM_NEST_BALL
+	setvar VAR_0x8008, ITEM_NEST_BALL
 	setvar VAR_0x8009, 80
 	goto CeruleanCity_House5_EventScript_ExchangePowderForItem
 	end

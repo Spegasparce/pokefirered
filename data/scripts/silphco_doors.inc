@@ -17,11 +17,11 @@ EventScript_Close2FDoor1:: @ 81A8149
     return
 
 EventScript_Close2FDoor2:: @ 81A8177
-    setmetatile 5, 15, METATILE_SilphCo_HorizontalBarrier_TopLeft, 1
-    setmetatile 6, 15, METATILE_SilphCo_HorizontalBarrier_TopRight, 1
-    setmetatile 5, 16, METATILE_SilphCo_HorizontalBarrier_BottomLeft, 1
-    setmetatile 6, 16, METATILE_SilphCo_HorizontalBarrier_BottomRight, 1
-    setmetatile 6, 17, METATILE_SilphCo_Floor_ShadeFull, 0
+    setmetatile 5, 13, METATILE_SilphCo_HorizontalBarrier_TopLeft, 1
+    setmetatile 6, 13, METATILE_SilphCo_HorizontalBarrier_TopRight, 1
+    setmetatile 5, 14, METATILE_SilphCo_HorizontalBarrier_BottomLeft, 1
+    setmetatile 6, 14, METATILE_SilphCo_HorizontalBarrier_BottomRight, 1
+    setmetatile 6, 15, METATILE_SilphCo_Floor_ShadeFull, 0
     return
 
 EventScript_Close3FDoor1:: @ 81A81A5
@@ -34,12 +34,11 @@ EventScript_Close3FDoor1:: @ 81A81A5
     return
 
 EventScript_Close3FDoor2:: @ 81A81DC
-    setmetatile 20, 11, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
-    setmetatile 21, 11, METATILE_SilphCo_VerticalBarrier_TopRight, 1
-    setmetatile 20, 12, METATILE_SilphCo_VerticalBarrier_MidLeft, 1
-    setmetatile 21, 12, METATILE_SilphCo_VerticalBarrier_MidRight, 1
-    setmetatile 20, 13, METATILE_SilphCo_VerticalBarrier_BottomLeft, 1
-    setmetatile 21, 13, METATILE_SilphCo_VerticalBarrier_BottomRight, 1
+    setmetatile 22, 16, METATILE_SilphCo_HorizontalBarrier_TopLeft, 1
+    setmetatile 22, 17, METATILE_SilphCo_HorizontalBarrier_BottomLeft, 1
+    setmetatile 23, 16, METATILE_SilphCo_HorizontalBarrier_TopRight, 1
+    setmetatile 23, 17, METATILE_SilphCo_HorizontalBarrier_BottomRight, 1
+    setmetatile 23, 18, METATILE_SilphCo_Floor_ShadeFull, 0
     return
 
 EventScript_Close4FDoor1:: @ 81A8213
@@ -58,33 +57,6 @@ EventScript_Close4FDoor2:: @ 81A8241
     setmetatile 15, 13, METATILE_SilphCo_Floor_ShadeFull, 0
     return
 
-EventScript_Close5FDoor1:: @ 81AMETATILE_SilphCo_Floor_WallRightCornerF
-    setmetatile 7, 8, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
-    setmetatile 8, 8, METATILE_SilphCo_VerticalBarrier_TopRight, 1
-    setmetatile 7, 9, METATILE_SilphCo_VerticalBarrier_MidLeft, 1
-    setmetatile 8, 9, METATILE_SilphCo_VerticalBarrier_MidRight, 1
-    setmetatile 7, 10, METATILE_SilphCo_VerticalBarrier_BottomLeft, 1
-    setmetatile 8, 10, METATILE_SilphCo_VerticalBarrier_BottomRight, 1
-    return
-
-EventScript_Close5FDoor2:: @ 81A82A6
-    setmetatile 7, 17, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
-    setmetatile 8, 17, METATILE_SilphCo_VerticalBarrier_TopRight, 1
-    setmetatile 7, 18, METATILE_SilphCo_VerticalBarrier_MidLeft, 1
-    setmetatile 8, 18, METATILE_SilphCo_VerticalBarrier_MidRight, 1
-    setmetatile 7, 19, METATILE_SilphCo_VerticalBarrier_BottomLeft, 1
-    setmetatile 8, 19, METATILE_SilphCo_VerticalBarrier_BottomRight, 1
-    return
-
-EventScript_Close5FDoor3:: @ 81A82DD
-    setmetatile 18, 12, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
-    setmetatile 19, 12, METATILE_SilphCo_VerticalBarrier_TopRight, 1
-    setmetatile 18, 13, METATILE_SilphCo_VerticalBarrier_MidLeft, 1
-    setmetatile 19, 13, METATILE_SilphCo_VerticalBarrier_MidRight, 1
-    setmetatile 18, 14, METATILE_SilphCo_VerticalBarrier_BottomLeft, 1
-    setmetatile 19, 14, METATILE_SilphCo_VerticalBarrier_BottomRight, 1
-    return
-
 EventScript_Close6FDoor:: @ 81A8314
     setmetatile 5, 14, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
     setmetatile 6, 14, METATILE_SilphCo_VerticalBarrier_TopRight, 1
@@ -94,28 +66,12 @@ EventScript_Close6FDoor:: @ 81A8314
     setmetatile 6, 16, METATILE_SilphCo_VerticalBarrier_BottomRight, 1
     return
 
-EventScript_Close7FDoor1:: @ 81A834B
-    setmetatile 11, 8, METATILE_SilphCo_HorizontalBarrier_TopLeft, 1
-    setmetatile 12, 8, METATILE_SilphCo_HorizontalBarrier_TopRight, 1
-    setmetatile 11, 9, METATILE_SilphCo_HorizontalBarrier_BottomLeft, 1
-    setmetatile 12, 9, METATILE_SilphCo_HorizontalBarrier_BottomRight, 1
-    setmetatile 12, 10, METATILE_SilphCo_Floor_ShadeFull, 0
-    return
-
 EventScript_Close7FDoor2:: @ 81A8379
     setmetatile 24, 7, METATILE_SilphCo_HorizontalBarrier_TopLeft, 1
     setmetatile 25, 7, METATILE_SilphCo_HorizontalBarrier_TopRight, 1
     setmetatile 24, 8, METATILE_SilphCo_HorizontalBarrier_BottomLeft, 1
     setmetatile 25, 8, METATILE_SilphCo_HorizontalBarrier_BottomRight, 1
     setmetatile 25, 9, METATILE_SilphCo_Floor_ShadeFull, 0
-    return
-
-EventScript_Close7FDoor3:: @ 81A83A7
-    setmetatile 25, 13, METATILE_SilphCo_HorizontalBarrier_TopLeft, 1
-    setmetatile 26, 13, METATILE_SilphCo_HorizontalBarrier_TopRight, 1
-    setmetatile 25, 14, METATILE_SilphCo_HorizontalBarrier_BottomLeft, 1
-    setmetatile 26, 14, METATILE_SilphCo_HorizontalBarrier_BottomRight, 1
-    setmetatile 26, 15, METATILE_SilphCo_Floor_ShadeFull, 0
     return
 
 EventScript_Close8FDoor:: @ 81A83D5
@@ -186,11 +142,11 @@ EventScript_Open2FDoor1:: @ 81A8532
     return
 
 EventScript_Open2FDoor2:: @ 81A8560
-    setmetatile 5, 15, METATILE_SilphCo_Floor_ShadeFull, 0
+    setmetatile 5, 13, METATILE_SilphCo_Floor_ShadeFull, 0
+    setmetatile 6, 13, METATILE_SilphCo_Floor, 0
+    setmetatile 5, 14, METATILE_SilphCo_Floor_ShadeFull, 0
+    setmetatile 6, 14, METATILE_SilphCo_Floor, 0
     setmetatile 6, 15, METATILE_SilphCo_Floor, 0
-    setmetatile 5, 16, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 6, 16, METATILE_SilphCo_Floor, 0
-    setmetatile 6, 17, METATILE_SilphCo_Floor, 0
     return
 
 EventScript_Open3FDoor1:: @ 81A858E
@@ -203,12 +159,11 @@ EventScript_Open3FDoor1:: @ 81A858E
     return
 
 EventScript_Open3FDoor2:: @ 81A85C5
-    setmetatile 20, 11, METATILE_SilphCo_Wall_LeftEdge, 1
-    setmetatile 21, 11, METATILE_SilphCo_Wall_RightEdge, 1
-    setmetatile 20, 12, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 21, 12, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 20, 13, METATILE_SilphCo_Floor_WallLeftCorner, 0
-    setmetatile 21, 13, METATILE_SilphCo_Floor_WallRightCorner, 0
+    setmetatile 22, 16, METATILE_SilphCo_Floor_ShadeFull, 0
+    setmetatile 22, 17, METATILE_SilphCo_Floor_ShadeFull, 0
+    setmetatile 23, 16, METATILE_SilphCo_Floor, 0
+    setmetatile 23, 17, METATILE_SilphCo_Floor, 0
+    setmetatile 23, 18, METATILE_SilphCo_Floor, 0
     return
 
 EventScript_Open4FDoor1:: @ 81A85FC
@@ -227,33 +182,6 @@ EventScript_Open4FDoor2:: @ 81A862A
     setmetatile 15, 13, METATILE_SilphCo_Floor, 0
     return
 
-EventScript_Open5FDoor1:: @ 81A8658
-    setmetatile 7, 8, METATILE_SilphCo_Wall_LeftEdge, 1
-    setmetatile 8, 8, METATILE_SilphCo_Wall_RightEdge, 1
-    setmetatile 7, 9, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 8, 9, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 7, 10, METATILE_SilphCo_Floor_WallLeftCorner, 0
-    setmetatile 8, 10, METATILE_SilphCo_Floor_WallRightCorner, 0
-    return
-
-EventScript_Open5FDoor2:: @ 81A868F
-    setmetatile 7, 17, METATILE_SilphCo_Wall_LeftEdge, 1
-    setmetatile 8, 17, METATILE_SilphCo_Wall_RightEdge, 1
-    setmetatile 7, 18, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 8, 18, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 7, 19, METATILE_SilphCo_Floor_WallLeftCorner, 0
-    setmetatile 8, 19, METATILE_SilphCo_Floor_WallRightCorner, 0
-    return
-
-EventScript_Open5FDoor3:: @ 81A86C6
-    setmetatile 18, 12, METATILE_SilphCo_Wall_LeftEdge, 1
-    setmetatile 19, 12, METATILE_SilphCo_Wall_RightEdge, 1
-    setmetatile 18, 13, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 19, 13, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 18, 14, METATILE_SilphCo_Floor_WallLeftCorner, 0
-    setmetatile 19, 14, METATILE_SilphCo_Floor_WallRightCorner, 0
-    return
-
 EventScript_Open6FDoor:: @ 81A86FD
     setmetatile 5, 14, METATILE_SilphCo_Wall_LeftEdge, 1
     setmetatile 6, 14, METATILE_SilphCo_Wall_RightEdge, 1
@@ -263,28 +191,12 @@ EventScript_Open6FDoor:: @ 81A86FD
     setmetatile 6, 16, METATILE_SilphCo_Floor_WallRightCorner, 0
     return
 
-EventScript_Open7FDoor1:: @ 81A8734
-    setmetatile 11, 8, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 12, 8, METATILE_SilphCo_Floor, 0
-    setmetatile 11, 9, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 12, 9, METATILE_SilphCo_Floor, 0
-    setmetatile 12, 10, METATILE_SilphCo_Floor, 0
-    return
-
 EventScript_Open7FDoor2:: @ 81A8762
     setmetatile 24, 7, METATILE_SilphCo_Floor_ShadeFull, 0
     setmetatile 25, 7, METATILE_SilphCo_Floor, 0
     setmetatile 24, 8, METATILE_SilphCo_Floor_ShadeFull, 0
     setmetatile 25, 8, METATILE_SilphCo_Floor, 0
     setmetatile 25, 9, METATILE_SilphCo_Floor, 0
-    return
-
-EventScript_Open7FDoor3:: @ 81A8790
-    setmetatile 25, 13, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 26, 13, METATILE_SilphCo_Floor, 0
-    setmetatile 25, 14, METATILE_SilphCo_Floor_ShadeFull, 0
-    setmetatile 26, 14, METATILE_SilphCo_Floor, 0
-    setmetatile 26, 15, METATILE_SilphCo_Floor, 0
     return
 
 EventScript_Open8FDoor:: @ 81A87BE
@@ -394,30 +306,6 @@ SilphCo_4F_EventScript_Door2:: @ 81A899D
     goto EventScript_TryUnlockDoor
     end
 
-SilphCo_5F_EventScript_Door1:: @ 81A89B7
-    lockall
-    setvar VAR_TEMP_1, 7
-    setvar VAR_0x8004, FLAG_SILPH_5F_DOOR_1
-    goto_if_set FLAG_SILPH_5F_DOOR_1, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
-
-SilphCo_5F_EventScript_Door2:: @ 81A89D1
-    lockall
-    setvar VAR_TEMP_1, 8
-    setvar VAR_0x8004, FLAG_SILPH_5F_DOOR_2
-    goto_if_set FLAG_SILPH_5F_DOOR_2, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
-
-SilphCo_5F_EventScript_Door3:: @ 81A89EB
-    lockall
-    setvar VAR_TEMP_1, 9
-    setvar VAR_0x8004, FLAG_SILPH_5F_DOOR_3
-    goto_if_set FLAG_SILPH_5F_DOOR_3, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
-
 SilphCo_6F_EventScript_Door:: @ 81A8A05
     lockall
     setvar VAR_TEMP_1, 10
@@ -426,27 +314,12 @@ SilphCo_6F_EventScript_Door:: @ 81A8A05
     goto EventScript_TryUnlockDoor
     end
 
-SilphCo_7F_EventScript_Door1:: @ 81A8A1F
-    lockall
-    setvar VAR_TEMP_1, 11
-    setvar VAR_0x8004, FLAG_SILPH_7F_DOOR_1
-    goto_if_set FLAG_SILPH_7F_DOOR_1, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
 
 SilphCo_7F_EventScript_Door2:: @ 81A8A39
     lockall
     setvar VAR_TEMP_1, 12
     setvar VAR_0x8004, FLAG_SILPH_7F_DOOR_2
     goto_if_set FLAG_SILPH_7F_DOOR_2, EventScript_DoorUnlocked
-    goto EventScript_TryUnlockDoor
-    end
-
-SilphCo_7F_EventScript_Door3:: @ 81A8A53
-    lockall
-    setvar VAR_TEMP_1, 13
-    setvar VAR_0x8004, FLAG_SILPH_7F_DOOR_3
-    goto_if_set FLAG_SILPH_7F_DOOR_3, EventScript_DoorUnlocked
     goto EventScript_TryUnlockDoor
     end
 
@@ -527,20 +400,10 @@ EventScript_OpenDoor:: @ 81A8B32
     call_if_eq EventScript_Open4FDoor1
     compare VAR_TEMP_1, 6
     call_if_eq EventScript_Open4FDoor2
-    compare VAR_TEMP_1, 7
-    call_if_eq EventScript_Open5FDoor1
-    compare VAR_TEMP_1, 8
-    call_if_eq EventScript_Open5FDoor2
-    compare VAR_TEMP_1, 9
-    call_if_eq EventScript_Open5FDoor3
     compare VAR_TEMP_1, 10
     call_if_eq EventScript_Open6FDoor
-    compare VAR_TEMP_1, 11
-    call_if_eq EventScript_Open7FDoor1
     compare VAR_TEMP_1, 12
     call_if_eq EventScript_Open7FDoor2
-    compare VAR_TEMP_1, 13
-    call_if_eq EventScript_Open7FDoor3
     compare VAR_TEMP_1, 14
     call_if_eq EventScript_Open8FDoor
     compare VAR_TEMP_1, 15

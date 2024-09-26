@@ -12,14 +12,22 @@ RocketHideout_B1F_Text_Grunt1PostBattle:: @ 8174EFA
 
 RocketHideout_B1F_Text_Grunt2Intro:: @ 8174F2C
     .string "You broke into TEAM ROCKET's\n"
-    .string "operation? What nerve!$"
+    .string "operation?  Are you ready to\l"
+    .string "take on all of us?$"
+
+RocketHideout_B1F_Text_Grunt2Battle::
+    .string "I, the mighty entrance guard,\n"
+    .string "will stop you!$"
 
 RocketHideout_B1F_Text_Grunt2Defeat:: @ 8174F60
-    .string "Boom!$"
+    .string "I'm not letting you out until\n"
+    .string "you talk to my manager!$"
 
 RocketHideout_B1F_Text_Grunt2PostBattle:: @ 8174F66
-    .string "You're not going to get away with\n"
-    .string "this, brat!$"
+    .string "Didn't you hear me?\p"
+    .string "Go talk to my boss.\p"
+    .string "At least one of you abusive goons\n"
+    .string "will lose in that matchup!$"
 
 RocketHideout_B1F_Text_Grunt3Intro:: @ 8174F94
     .string "Intruder alert!$"
@@ -48,6 +56,10 @@ RocketHideout_B1F_Text_Grunt5Defeat:: @ 817505A
     .string "Why…?$"
 
 RocketHideout_B1F_Text_Grunt5PostBattle:: @ 8175060
-    .string "Uh-oh, that ruckus somehow opened\n"
-    .string "the door!$"
+    .string "Please don't take any part of\n"
+    .string "my lunch while you're in here!$"
+
+RocketHideout_B1F_Text_Grunt2ComeBack::
+    .string "Ok, come back when you're ready\n"
+    .string "to give me a real fight.$"
 

@@ -14,11 +14,12 @@ SilphCo_9F_EventScript_HealWoman:: @ 8161D09
 	faceplayer
 	compare VAR_MAP_SCENE_SILPH_CO_11F, 1
 	goto_if_ge SilphCo_9F_EventScript_HealWomanRocketsGone
-	msgbox SilphCo_9F_Text_YouShouldTakeQuickNap
-	closemessage
-	call EventScript_OutOfCenterPartyHeal
-	msgbox SilphCo_9F_Text_DontGiveUp
-	release
+	goto_if_set FLAG_SILPH_CO_9F_USED_HEAL, SilphCo_9F_EventScript_DontGiveUp
+	msgbox SilphCo_9F_Text_YouShouldTakeQuickNap, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq SilphCo_9F_EventScript_UseTheHeal
+	compare VAR_RESULT, NO
+	goto_if_eq SilphCo_9F_EventScript_IWillBeReady
 	end
 
 SilphCo_9F_EventScript_HealWomanRocketsGone:: @ 8161D2E
@@ -44,3 +45,22 @@ SilphCo_9F_EventScript_Grunt2:: @ 8161D6F
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_38, SilphCo_9F_Text_Grunt2Intro, SilphCo_9F_Text_Grunt2Defeat
 	msgbox SilphCo_9F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
+	
+SilphCo_9F_EventScript_UseTheHeal::
+	call EventScript_SilphPartyHeal
+	setflag FLAG_SILPH_CO_9F_USED_HEAL
+	msgbox SilphCo_9F_Text_DontGiveUp
+	release
+	end
+
+SilphCo_9F_EventScript_DontGiveUp::
+    msgbox SilphCo_9F_Text_DontGiveUp
+	release
+	end
+
+SilphCo_9F_EventScript_IWillBeReady::
+	waitmessage
+    msgbox SilphCo_9F_Text_IWillBeReady
+	release
+    end
+

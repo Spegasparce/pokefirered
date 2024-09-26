@@ -9,6 +9,7 @@
 	.align 2
 gSpecials:: @ 815FD60
 	def_special HealPlayerParty
+	def_special HealPlayerPartySilph
 	def_special SetCableClubWarp
 	def_special DoCableClubWarp
 	def_special ReturnFromLinkRoom

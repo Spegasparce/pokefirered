@@ -16,11 +16,16 @@ ViridianCity_Mart_Text_SayHiToOakForMe:: @ 81902BF
     .string "PROF. OAK for me, too.$"
 
 ViridianCity_Mart_Text_ShopDoesGoodBusinessInAntidotes:: @ 81902F5
-    .string "This shop does good business in\n"
-    .string "ANTIDOTES, I've heard.$"
+    .string "The shops in Kanto recently\n"
+    .string "fell under new management.\p"
+    .string "The new owners must be pretty\n"
+    .string "sadistic to stop selling\l"
+    .string "ANTIDOTES.$"
+
 
 ViridianCity_Mart_Text_GotToBuySomePotions:: @ 819032C
-    .string "I've got to buy some POTIONS.\p"
-    .string "You never know when your POKéMON\n"
-    .string "will need quick healing.$"
+    .string "You can't buy any POTIONS here.\p"
+    .string "You'll never be able to help\n"
+    .string "when your POKéMON need quick\l"
+    .string "healing.$"
 

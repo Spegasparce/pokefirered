@@ -53,6 +53,9 @@ Route25_SeaCottage_Text_NoPleaseBeautiful:: @ 81A00B6
 Route25_SeaCottage_Text_ThanksBudTakeThis:: @ 81A013B
     .string "BILL: Yeehah!\n"
     .string "Thanks, bud! I owe you one!\p"
+    .string "Don't worry about the CLEFAIRY,\n"
+    .string "it's dead now but that's ok.\p"
+    .string "POKéMON don't have feelings.\p"
     .string "So, did you come to see my\n"
     .string "POKéMON collection?\p"
     .string "You didn't?\n"
@@ -63,6 +66,9 @@ Route25_SeaCottage_Text_ThanksBudTakeThis:: @ 81A013B
 Route25_SeaCottage_Text_ThanksLadyTakeThis:: @ 81A01E4
     .string "BILL: Yeehah!\n"
     .string "Thanks, lady! I owe you one!\p"
+    .string "Don't worry about the CLEFAIRY,\n"
+    .string "it's dead now but that's ok.\p"
+    .string "POKéMON don't have feelings.\p"
     .string "So, did you come to see my\n"
     .string "POKéMON collection?\p"
     .string "You didn't?\n"

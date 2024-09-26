@@ -1,12 +1,22 @@
 SilphCo_9F_Text_YouShouldTakeQuickNap:: @ 8176B54
-    .string "You look tired.\n"
-    .string "You should take a quick nap.$"
+    .string "You look tired.  I can\n"
+    .string "heal you and your POKéMON.\p"
+    .string "However, I can heal\n"
+    .string "your POKéMON only one time.\p"
+    .string "Would you like to use the\n"
+    .string "one-time heal now?$"
 
 SilphCo_9F_Text_DontGiveUp:: @ 8176B81
-    .string "Don't give up!$"
+    .string "I'm glad I could help you!\p"
+    .string "Now don't give up!$"
 
 SilphCo_9F_Text_ThankYouSoMuch:: @ 8176B90
-    .string "Thank you so much.$"
+    .string "Thank you so much!\p"
+    .string "But make sure to give me some\n"
+    .string "credit if you mention the\l"
+    .string "rescue in a POKéMON CENTER.\p"
+    .string "I've been trying to get hired\n"
+    .string "at one for years.$"
 
 SilphCo_9F_Text_Grunt1Intro:: @ 8176BA3
     .string "Your POKéMON seem to adore you,\n"
@@ -44,4 +54,9 @@ SilphCo_9F_Text_Grunt2PostBattle:: @ 8176CB8
 SilphCo_9F_Text_FloorSign:: @ 8176CD4
     .string "SILPH CO. HEAD OFFICE\n"
     .string "9F$"
+
+SilphCo_9F_Text_IWillBeReady::
+    .string "I will be ready should you\n"
+    .string "wish to use the one-time\l"
+    .string "heal for your POKéMON.$"
 

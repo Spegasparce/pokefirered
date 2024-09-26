@@ -213,10 +213,10 @@ CinnabarIsland_Gym_EventScript_Quiz1:: @ 816DC00
 	compare VAR_RESULT, YES
 	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz1Correct
 	compare VAR_RESULT, NO
-	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz1Incorrect
+	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz1Correct
 	end
 
-CinnabarIsland_Gym_EventScript_CorrectAnswer:: @ 816DC27
+CinnabarIsland_Gym_EventScript_CorrectAnswer::
 	playfanfare MUS_FANFA1
 	waitfanfare
 	msgbox CinnabarIsland_Gym_Text_CorrectGoOnThrough
@@ -231,9 +231,9 @@ CinnabarIsland_Gym_EventScript_IncorrectAnswer:: @ 816DC34
 	return
 
 CinnabarIsland_Gym_EventScript_Quiz1Correct:: @ 816DC43
-	call CinnabarIsland_Gym_EventScript_CorrectAnswer
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_1, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz1Complete
+	goto_if_not_defeated TRAINER_BURGLAR_QUINN, CinnabarIsland_Gym_EventScript_BattleQuinn
 	releaseall
 	end
 
@@ -261,7 +261,7 @@ CinnabarIsland_Gym_EventScript_BattleQuinn:: @ 816DC7A
 	compare VAR_TEMP_1, 1
 	call_if_eq CinnabarIsland_Gym_EventScript_QuinnApproachRight
 	textcolor 0
-	msgbox CinnabarIsland_Gym_Text_QuinnIntro
+	msgbox CinnabarIsland_Gym_Text_Quiz1BattleText
 	trainerbattle_no_intro TRAINER_BURGLAR_QUINN, CinnabarIsland_Gym_Text_QuinnDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_1, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz1Complete
@@ -304,16 +304,16 @@ CinnabarIsland_Gym_EventScript_Quiz2Right:: @ 816DCE9
 CinnabarIsland_Gym_EventScript_Quiz2:: @ 816DCF5
 	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
 	msgbox CinnabarIsland_Gym_Text_QuizQuestion2, MSGBOX_YESNO
-	compare VAR_RESULT, YES
-	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz2Incorrect
 	compare VAR_RESULT, NO
+	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz2Correct
+	compare VAR_RESULT, YES
 	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz2Correct
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz2Correct:: @ 816DD1C
-	call CinnabarIsland_Gym_EventScript_CorrectAnswer
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_2, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz2Complete
+	goto_if_not_defeated TRAINER_SUPER_NERD_AVERY, CinnabarIsland_Gym_EventScript_BattleAvery
 	releaseall
 	end
 
@@ -337,7 +337,7 @@ CinnabarIsland_Gym_EventScript_BattleAvery:: @ 816DD51
 	compare VAR_TEMP_1, 1
 	call_if_eq CinnabarIsland_Gym_EventScript_AveryApproachRight
 	textcolor 0
-	msgbox CinnabarIsland_Gym_Text_AveryIntro
+	msgbox CinnabarIsland_Gym_Text_Quiz2BattleText
 	trainerbattle_no_intro TRAINER_SUPER_NERD_AVERY, CinnabarIsland_Gym_Text_AveryDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_2, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz2Complete
@@ -389,16 +389,16 @@ CinnabarIsland_Gym_EventScript_Quiz3Right:: @ 816DDC7
 CinnabarIsland_Gym_EventScript_Quiz3:: @ 816DDD3
 	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
 	msgbox CinnabarIsland_Gym_Text_QuizQuestion3, MSGBOX_YESNO
-	compare VAR_RESULT, YES
-	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz3Incorrect
 	compare VAR_RESULT, NO
+	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz3Correct
+	compare VAR_RESULT, YES
 	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz3Correct
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz3Correct:: @ 816DDFA
-	call CinnabarIsland_Gym_EventScript_CorrectAnswer
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_3, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz3Complete
+	goto_if_not_defeated TRAINER_BURGLAR_RAMON, CinnabarIsland_Gym_EventScript_BattleRamon
 	releaseall
 	end
 
@@ -411,7 +411,6 @@ CinnabarIsland_Gym_EventScript_Quiz3Complete:: @ 816DE0F
 	return
 
 CinnabarIsland_Gym_EventScript_Quiz3Incorrect:: @ 816DE1F
-	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
 	goto_if_not_defeated TRAINER_BURGLAR_RAMON, CinnabarIsland_Gym_EventScript_BattleRamon
 	releaseall
 	end
@@ -422,7 +421,7 @@ CinnabarIsland_Gym_EventScript_BattleRamon:: @ 816DE2F
 	compare VAR_TEMP_1, 1
 	call_if_eq CinnabarIsland_Gym_EventScript_RamonApproachRight
 	textcolor 0
-	msgbox CinnabarIsland_Gym_Text_RamonIntro
+	msgbox CinnabarIsland_Gym_Text_Quiz3BattleText
 	trainerbattle_no_intro TRAINER_BURGLAR_RAMON, CinnabarIsland_Gym_Text_RamonDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_3, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz3Complete
@@ -466,15 +465,15 @@ CinnabarIsland_Gym_EventScript_Quiz4:: @ 816DEAA
 	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
 	msgbox CinnabarIsland_Gym_Text_QuizQuestion4, MSGBOX_YESNO
 	compare VAR_RESULT, YES
-	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz4Incorrect
+	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz4Correct
 	compare VAR_RESULT, NO
 	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz4Correct
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz4Correct:: @ 816DED1
-	call CinnabarIsland_Gym_EventScript_CorrectAnswer
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_4, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz4Complete
+	goto_if_not_defeated TRAINER_SUPER_NERD_DEREK, CinnabarIsland_Gym_EventScript_BattleDerek
 	releaseall
 	end
 
@@ -487,8 +486,7 @@ CinnabarIsland_Gym_EventScript_Quiz4Complete:: @ 816DEE6
 	return
 
 CinnabarIsland_Gym_EventScript_Quiz4Incorrect:: @ 816DEF6
-	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
-	goto_if_not_defeated TRAINER_SUPER_NERD_DEREK, CinnabarIsland_Gym_EventScript_BattleDerek
+	goto_if_not_defeated TRAINER_SUPER_NERD_DEREK, CinnabarIsland_Gym_EventScript_BattleDerekNo
 	releaseall
 	end
 
@@ -498,7 +496,20 @@ CinnabarIsland_Gym_EventScript_BattleDerek:: @ 816DF06
 	compare VAR_TEMP_1, 1
 	call_if_eq CinnabarIsland_Gym_EventScript_DerekApproachRight
 	textcolor 0
-	msgbox CinnabarIsland_Gym_Text_DerekIntro
+	msgbox CinnabarIsland_Gym_Text_Quiz4BattleText
+	trainerbattle_no_intro TRAINER_SUPER_NERD_DEREK, CinnabarIsland_Gym_Text_DerekDefeat
+	goto_if_set FLAG_CINNABAR_GYM_QUIZ_4, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
+	call CinnabarIsland_Gym_EventScript_Quiz4Complete
+	releaseall
+	end
+
+CinnabarIsland_Gym_EventScript_BattleDerekNo::
+	compare VAR_TEMP_1, 0
+	call_if_eq CinnabarIsland_Gym_EventScript_DerekApproachLeft
+	compare VAR_TEMP_1, 1
+	call_if_eq CinnabarIsland_Gym_EventScript_DerekApproachRight
+	textcolor 0
+	msgbox CinnabarIsland_Gym_Text_Quiz4BattleTextNo
 	trainerbattle_no_intro TRAINER_SUPER_NERD_DEREK, CinnabarIsland_Gym_Text_DerekDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_4, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz4Complete
@@ -544,13 +555,13 @@ CinnabarIsland_Gym_EventScript_Quiz5:: @ 816DF81
 	compare VAR_RESULT, YES
 	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz5Correct
 	compare VAR_RESULT, NO
-	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz5Incorrect
+	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz5Correct
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz5Correct:: @ 816DFA8
-	call CinnabarIsland_Gym_EventScript_CorrectAnswer
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_5, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz5Complete
+	goto_if_not_defeated TRAINER_BURGLAR_DUSTY, CinnabarIsland_Gym_EventScript_BattleDusty
 	releaseall
 	end
 
@@ -574,7 +585,7 @@ CinnabarIsland_Gym_EventScript_BattleDusty:: @ 816DFDD
 	compare VAR_TEMP_1, 1
 	call_if_eq CinnabarIsland_Gym_EventScript_DustyApproachRight
 	textcolor 0
-	msgbox CinnabarIsland_Gym_Text_DustyIntro
+	msgbox CinnabarIsland_Gym_Text_Quiz5BattleText
 	trainerbattle_no_intro TRAINER_BURGLAR_DUSTY, CinnabarIsland_Gym_Text_DustyDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_5, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz5Complete
@@ -618,15 +629,15 @@ CinnabarIsland_Gym_EventScript_Quiz6:: @ 816E058
 	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
 	msgbox CinnabarIsland_Gym_Text_QuizQuestion6, MSGBOX_YESNO
 	compare VAR_RESULT, YES
-	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz6Incorrect
+	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz6Correct
 	compare VAR_RESULT, NO
 	goto_if_eq CinnabarIsland_Gym_EventScript_Quiz6Correct
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz6Correct:: @ 816E07F
-	call CinnabarIsland_Gym_EventScript_CorrectAnswer
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_6, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz6Complete
+	goto_if_not_defeated TRAINER_SUPER_NERD_ZAC, CinnabarIsland_Gym_EventScript_BattleZac
 	releaseall
 	end
 
@@ -639,7 +650,6 @@ CinnabarIsland_Gym_EventScript_Quiz6Complete:: @ 816E094
 	return
 
 CinnabarIsland_Gym_EventScript_Quiz6Incorrect:: @ 816E0A4
-	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
 	goto_if_not_defeated TRAINER_SUPER_NERD_ZAC, CinnabarIsland_Gym_EventScript_BattleZac
 	releaseall
 	end
@@ -650,7 +660,7 @@ CinnabarIsland_Gym_EventScript_BattleZac:: @ 816E0B4
 	compare VAR_TEMP_1, 1
 	call_if_eq CinnabarIsland_Gym_EventScript_ZacApproachRight
 	textcolor 0
-	msgbox CinnabarIsland_Gym_Text_ZacIntro
+	msgbox CinnabarIsland_Gym_Text_Quiz6BattleText
 	trainerbattle_no_intro TRAINER_SUPER_NERD_ZAC, CinnabarIsland_Gym_Text_ZacDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_6, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz6Complete
@@ -733,3 +743,76 @@ CinnabarIsland_Gym_EventScript_OpenDoor6:: @ 816E233
 	setmetatile  6, 10, METATILE_CinnabarGym_Floor, 0
 	setmetatile  7, 10, METATILE_CinnabarGym_Floor_ShadeDiagonal, 0
 	return
+
+CinnabarIsland_Gym_EventScript_PokemonCheck::
+	lockall
+	goto_if_set FLAG_DEFEATED_BLAINE, CinnabarIsland_Gym_EventScript_RemoveBlock
+	compare VAR_TEMP_A, 0
+	call_if_eq CinnabarIsland_Gym_EventScript_CheckMessage
+	specialvar VAR_RESULT, CalculatePlayerPartyCount
+	compare VAR_RESULT, 0
+	goto_if_eq CinnabarIsland_Gym_EventScript_GoAhead
+	compare VAR_RESULT, 1
+	goto_if_eq CinnabarIsland_Gym_EventScript_GoAhead
+	compare VAR_RESULT, 2
+	goto_if_eq CinnabarIsland_Gym_EventScript_GoAhead
+	compare VAR_RESULT, 3
+	goto_if_eq CinnabarIsland_Gym_EventScript_GoAhead
+	goto CinnabarIsland_Gym_EventScript_CantLetYouIn
+	releaseall
+	end
+
+CinnabarIsland_Gym_EventScript_RemoveBlock::
+	releaseall
+	end
+
+CinnabarIsland_Gym_EventScript_GoAhead::
+	compare VAR_TEMP_A, 1
+	call_if_eq CinnabarIsland_EventScript_CannotLeave
+	compare VAR_TEMP_A, 0
+	call_if_eq CinnabarIsland_EventScript_GoAhead
+	releaseall
+	end
+
+CinnabarIsland_Gym_EventScript_CantLetYouIn::
+	msgbox CinnabarIsland_Gym_Text_CantLetYouIn
+	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Gym_Movement_BackUp
+	waitmovement 0
+	releaseall
+	end
+
+CinnabarIsland_Gym_EventScript_CheckMessage::
+	msgbox CinnabarIsland_Gym_Text_HaveToCheckParty
+	return
+
+CinnabarIsland_EventScript_CannotLeave::
+	msgbox CinnabarIsland_Gym_Text_CannotLeave
+	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Gym_Movement_EnterGym
+	waitmovement 0
+	return
+
+CinnabarIsland_EventScript_GoAhead::
+	msgbox CinnabarIsland_Gym_Text_DoYouWantToEnter, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq CinnabarIsland_Gym_EventScript_EnterGym
+	compare VAR_RESULT, NO
+	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Gym_Movement_BackUp
+    waitmovement 0
+	return
+
+CinnabarIsland_Gym_EventScript_EnterGym::
+  	msgbox CinnabarIsland_Gym_Text_GoAhead
+	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Gym_Movement_EnterGym
+    waitmovement 0
+	setvar VAR_TEMP_A, 1
+	releaseall
+	end
+
+CinnabarIsland_Gym_Movement_BackUp:
+	walk_down
+	step_end
+
+CinnabarIsland_Gym_Movement_EnterGym:
+	walk_up
+	step_end
+

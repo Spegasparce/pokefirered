@@ -3,19 +3,19 @@ CeruleanCity_House2_Text_RocketsStoleTMForDig:: @ 8191E13
     .string "Look what they've done to my\n"
     .string "house!\p"
     .string "They stole a TM for teaching\n"
-    .string "POKéMON how to DIG holes!\p"
+    .string "POKéMON how to spit seeds!\p"
     .string "I was going to use it on a\n"
-    .string "MANKEY or a SANDSHREW…\p"
+    .string "LOTAD or a SHROOMISH...\p"
     .string "That cost me a bundle, it did!$"
 
 CeruleanCity_House2_Text_TeachDiglettDigWithoutTM:: @ 8191ED8
     .string "I figure what's lost is lost.\p"
-    .string "I decided to teach DIGLETT how to\n"
-    .string "DIG without a TM.$"
+    .string "I decided to teach LOTAD how to\n"
+    .string "spit seeds without a TM.$"
 
 CeruleanCity_House2_Text_TeamRocketTryingToDigIntoNoGood:: @ 8191F2A
-    .string "TEAM ROCKET must be trying to DIG\n"
-    .string "their way into no good!$"
+    .string "TEAM ROCKET must be trying to\n"
+    .string "shoot seeds with massive force!$"
 
 CeruleanCity_House2_Text_TeamRocketLeftWayOut:: @ 8191F64
     .string "TEAM ROCKET left a way out!$"

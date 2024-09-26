@@ -116,7 +116,7 @@ Help_Text_CantCatchMons:: @ 81B32B6
 	.string "I can't catch POKéMON!$"
 
 Help_Text_RanOutOfPotions:: @ 81B32CD
-	.string "I ran out of POTIONS.$"
+	.string "Kanto ran out of POTIONS.$"
 
 Help_Text_CanIBuyPokeBalls:: @ 81B32E3
 	.string "Can I buy POKé BALLS?$"
@@ -357,8 +357,9 @@ Help_Text_AnswerRanOutOfPotions:: @ 81B457C
 	.string "MARTS, that sell items.\l"
 	.string "You will not find POKéMON MARTS on\l"
 	.string "roads, in forests, or in caves.\l"
-	.string "Stock up on needed items while you are\l"
-	.string "visiting a town with a POKéMON MART.$"
+	.string "Stock up on needed non-healing items.\l"
+	.string "while you are visiting a town with\l"
+	.string "a POKéMON MART.$"
 
 Help_Text_AnswerCanIBuyPokeBalls:: @ 81B4645
 	.string "You may buy POKé BALLS at any\n"
@@ -778,7 +779,7 @@ Help_Text_HowToUsePotion:: @ 81B62E4
 	.string "{CIRCLE_3} Select “POTION” in the “ITEMS”\n"
 	.string "   POCKET.\n"
 	.string "{CIRCLE_4} Select “USE.”\n"
-	.string "{CIRCLE_5} Select the POKéMON to be healed.$"
+	.string "{CIRCLE_5} Realize you can't.$"
 
 Help_Text_HowToUseTownMap:: @ 81B6397
 	.string "{CIRCLE_1} Open the MENU.\n"

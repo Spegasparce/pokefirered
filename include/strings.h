@@ -396,7 +396,13 @@ extern const u8 gText_PkmnCantSwitchOut[];
 // credits
 extern const u8 gString_Dummy[];
 extern const u8 gString_PokemonFireRed_Staff[]; // FR
-extern const u8 gString_PokemonLeafGreen_Staff[]; // LG
+extern const u8 gString_PokemonGarbageGreen_Staff[];
+extern const u8 gCreditsString_HackProducer[];
+extern const u8 gCreditsString_Jan_Pokemon_Challenges[];
+extern const u8 gCreditsString_LeadDesigner[];
+extern const u8 gCreditsString_Spegasparce[];
+extern const u8 gCreditsString_CodeMasters[];
+extern const u8 gCreditsString_Toxic_Not_Suicuu[];
 extern const u8 gCreditsString_Director[];
 extern const u8 gCreditsString_Junichi_Masuda[];
 extern const u8 gCreditsString_Art_Director_Battle_Director[];

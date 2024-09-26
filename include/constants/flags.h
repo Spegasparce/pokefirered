@@ -374,7 +374,7 @@
 #define FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL                     0x16A
 #define FLAG_HIDE_ROUTE9_TM40                                   0x16B
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_ESCAPE_ROPE                0x16C
-#define FLAG_HIDE_ROCKET_HIDEOUT_B1F_HYPER_POTION               0x16D
+#define FLAG_BEAT_ROCKET_HIDEOUT_B1F_GRUNT2                     0x16D
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_X_SPEED                    0x16E
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_NUGGET                 0x16F
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_TM12                       0x170
@@ -385,7 +385,7 @@
 #define FLAG_HIDE_ROCKET_HIDEOUT_B4F_MAX_ETHER                  0x175
 #define FLAG_HIDE_ROCKET_HIDEOUT_B4F_CALCIUM                    0x176
 #define FLAG_HIDE_POKEMON_TOWER_3F_ESCAPE_ROPE                  0x177
-#define FLAG_HIDE_POKEMON_TOWER_4F_ELIXIR                       0x178
+#define FLAG_LOCKED_POKEMON_TOWER                               0x178
 #define FLAG_HIDE_POKEMON_TOWER_4F_AWAKENING                    0x179
 #define FLAG_HIDE_POKEMON_TOWER_4F_GREAT_BALL                   0x17A
 #define FLAG_HIDE_POKEMON_TOWER_5F_NUGGET                       0x17B
@@ -398,7 +398,7 @@
 #define FLAG_HIDE_SAFARI_ZONE_EAST_MAX_POTION                   0x182
 #define FLAG_HIDE_SAFARI_ZONE_EAST_FULL_RESTORE                 0x183
 #define FLAG_HIDE_SAFARI_ZONE_EAST_TM11                         0x184
-#define FLAG_HIDE_SAFARI_ZONE_EAST_NUGGET                   0x185
+#define FLAG_HIDE_SAFARI_ZONE_EAST_NUGGET                       0x185
 #define FLAG_HIDE_SAFARI_ZONE_NORTH_PROTEIN                     0x186
 #define FLAG_HIDE_SAFARI_ZONE_NORTH_TM47                        0x187
 #define FLAG_HIDE_SAFARI_ZONE_WEST_TM32                         0x188
@@ -413,16 +413,16 @@
 #define FLAG_HIDE_SILPH_CO_5F_TM01                              0x191
 #define FLAG_HIDE_SILPH_CO_5F_CARD_KEY                          0x192
 #define FLAG_HIDE_SILPH_CO_6F_HP_UP                             0x193
-#define FLAG_HIDE_SILPH_CO_6F_X_SPECIAL                         0x194
+#define FLAG_HIDE_SILPH_CO_6F_ZINC                              0x194
 #define FLAG_HIDE_SILPH_CO_7F_CALCIUM                           0x195
 #define FLAG_HIDE_SILPH_CO_7F_TM08                              0x196
 #define FLAG_HIDE_SILPH_CO_10F_CARBOS                           0x197
 #define FLAG_HIDE_SILPH_CO_10F_ULTRA_BALL                       0x198
-#define FLAG_HIDE_SILPH_CO_10F_NUGGET                       0x199
+#define FLAG_HIDE_SILPH_CO_10F_NUGGET                           0x199
 #define FLAG_HIDE_POWER_PLANT_MAX_POTION                        0x19A
 #define FLAG_HIDE_POWER_PLANT_TM17                              0x19B
 #define FLAG_HIDE_POWER_PLANT_TM25                              0x19C
-#define FLAG_HIDE_POWER_PLANT_NUGGET                     0x19D
+#define FLAG_HIDE_POWER_PLANT_NUGGET                            0x19D
 #define FLAG_HIDE_POWER_PLANT_ELIXIR                            0x19E
 #define FLAG_HIDE_POKEMON_MANSION_1F_CARBOS                     0x19F
 #define FLAG_HIDE_POKEMON_MANSION_1F_ESCAPE_ROPE                0x1A0
@@ -465,8 +465,8 @@
 #define FLAG_HIDE_ROCK_TUNNEL_1F_ESCAPE_ROPE                    0x1C5
 #define FLAG_HIDE_ROCK_TUNNEL_B1F_REVIVE                        0x1C6
 #define FLAG_HIDE_ROCK_TUNNEL_B1F_MAX_ETHER                     0x1C7
+#define FLAG_SILPH_CO_9F_USED_HEAL                              0x1C9
 #define FLAG_HIDE_SILPH_CO_8F_IRON                              0x1C8
-#define FLAG_HIDE_SILPH_CO_11F_ZINC                             0x1C9
 #define FLAG_HIDE_POKEMON_MANSION_1F_PROTEIN                    0x1CA
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0x1CB
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0x1CC
@@ -1237,9 +1237,9 @@
 #define FLAG_DEFEATED_AGATHA          0x4BA
 #define FLAG_DEFEATED_LANCE           0x4BB
 #define FLAG_DEFEATED_CHAMP           0x4BC
+#define FLAG_DEFEATED_E4_R1           0x4BD
 
 // Unused?
-#define FLAG_0x4BD               0x4BD
 #define FLAG_0x4BE               0x4BE
 #define FLAG_0x4BF               0x4BF
 #define FLAG_0x4C0               0x4C0

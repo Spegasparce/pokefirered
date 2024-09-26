@@ -312,10 +312,16 @@ const u16 sLevelCapFlags[NUM_SOFT_CAPS] =
 {
     FLAG_BADGE01_GET, FLAG_BADGE02_GET, FLAG_BADGE03_GET, FLAG_BADGE04_GET,
     FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
-	FLAG_DEFEATED_LEADER_GIOVANNI, FLAG_0x0AF
+	FLAG_0x0AF
 };
-
+const u16 sCandyCapFlags[NUM_HARD_CAPS] =
+{
+    FLAG_BADGE01_GET, FLAG_BADGE02_GET, FLAG_BADGE03_GET, FLAG_BADGE04_GET,
+    FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
+	FLAG_DEFEATED_CHAMP
+};
 const u16 sLevelCaps[NUM_SOFT_CAPS] = { 15, 22, 25, 30, 40, 44, 48, 51, 61, 100 };
+const u16 sCandyCaps[NUM_HARD_CAPS] = { 14, 21, 24, 29, 39, 43, 47, 50, 60, 100 };
 const double sLevelCapReduction[7] = { .5, .33, .25, .20, .15, .10, .05 };
 void (* const gBattleScriptingCommandsTable[])(void) =
 {
@@ -7744,6 +7750,7 @@ static void atkA8_copymovepermanently(void) // sketch
     gChosenMove = 0xFFFF;
     if (!(gBattleMons[gBattlerAttacker].status2 & STATUS2_TRANSFORMED)
      && gLastPrintedMoves[gBattlerTarget] != MOVE_STRUGGLE
+     && gLastPrintedMoves[gBattlerTarget] != MOVE_BATON_PASS
      && gLastPrintedMoves[gBattlerTarget] != 0
      && gLastPrintedMoves[gBattlerTarget] != 0xFFFF
      && gLastPrintedMoves[gBattlerTarget] != MOVE_SKETCH)
